@@ -1,0 +1,10 @@
+"$schema" = "https://open-api.netlify.com/netlify.schema.json"
+
+[build]
+  publish = "public"
+  command = "python3 scripts/build_web_bundle.py"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["netlify/functions/data/archive.json.gz"]

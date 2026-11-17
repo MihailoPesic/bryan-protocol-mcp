@@ -66,11 +66,21 @@ pip install -e .
 bryan-protocol-mcp serve
 ```
 
-### Optional HTTP JSON-RPC server
+### Optional HTTP JSON-RPC server (Python)
 
 ```bash
 PYTHONPATH=src python3 -m bryan_protocol_mcp serve --transport http --host 127.0.0.1 --port 8000
 ```
+
+## Public Web UI & Hosted Streamable HTTP MCP (Netlify)
+
+In addition to the local Python stdio server, this repo includes a zero-API-key web frontend (`public/`) and serverless Streamable HTTP MCP endpoint (`netlify/functions/mcp.mts`) ready to deploy on Netlify:
+
+- `GET /`: Interactive "What Would Bryan Do?" search, shareable `?q=...` verdict links, "Stopped & Avoided" matrix, timestamped video/podcast jump links, and one-click quote/receipt copy buttons.
+- `POST /mcp`: Public Streamable HTTP MCP server built on `@modelcontextprotocol/sdk` (`WebStandardStreamableHTTPServerTransport`), backed by a compressed 2.1 MB archive bundle (`netlify/functions/data/archive.json.gz`).
+- `GET /api/query`, `/api/stances`, `/api/overview`, `/api/document`, `/api/sources`: JSON endpoints powering the web UI.
+
+Deploy straight to Netlify by linking the GitHub repository (build command `python3 scripts/build_web_bundle.py`, publish directory `public`).
 
 ## Available MCP Tools & Resources
 
@@ -96,8 +106,9 @@ The scrapers run using Python's standard library (WordPress REST API, Shopify si
 # Refresh official pages, articles, @BryanJohnson videos, and external podcasts
 PYTHONPATH=src python3 -m bryan_protocol_mcp ingest --all
 
-# Rebuild SQLite FTS5 after editing data/stances.json or data/external_podcasts.json
+# Rebuild SQLite FTS5 and the Netlify bundle after editing data/stances.json or data/external_podcasts.json
 PYTHONPATH=src python3 -m bryan_protocol_mcp build-db
+python3 scripts/build_web_bundle.py
 ```
 
 To index additional YouTube interviews or podcast appearances, add their video IDs to `data/external_podcasts.json` and run `ingest --youtube`.
@@ -106,6 +117,7 @@ To index additional YouTube interviews or podcast appearances, add their video I
 
 ```bash
 python3 -m unittest discover -s tests -v
+node --test tests/node_engine.test.mjs
 ```
 
 ## Disclaimer
