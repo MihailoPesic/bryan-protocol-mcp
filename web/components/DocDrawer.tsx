@@ -8,9 +8,10 @@ interface DocDrawerProps {
   onClose: () => void;
 }
 
-function renderInline(text: string): ReactNode[] {
+function renderInline(rawText: string): ReactNode[] {
+  const text = rawText.replace(/<\/?(?:b|i|em|strong|u|s|br|p|span|font)[^>]*>/gi, "");
   const parts: ReactNode[] = [];
-  const pattern = /(\[([^\]]+)\]\((https?:\/\/[^)]+)\)|\*\*([^*]+)\*\*)/g;
+  const pattern = /(\[([^\]]+)\]\(([^)]*)\)|\*\*([^*]+)\*\*|\*([^*]+)\*)/g;
   let last = 0;
   let match: RegExpExecArray | null;
   let key = 0;
@@ -19,23 +20,34 @@ function renderInline(text: string): ReactNode[] {
     if (match.index > last) {
       parts.push(text.slice(last, match.index));
     }
-    if (match[2] && match[3]) {
-      parts.push(
-        <a
-          key={key++}
-          href={match[3]}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#1D4ED8] underline decoration-[#BFCFF6] underline-offset-2 hover:decoration-[#1D4ED8]"
-        >
-          {match[2]}
-        </a>,
-      );
+    if (match[2] !== undefined && match[3] !== undefined) {
+      const target = match[3].trim();
+      if (/^(https?:\/\/|mailto:)/i.test(target)) {
+        parts.push(
+          <a
+            key={key++}
+            href={target}
+            target={target.startsWith("mailto:") ? undefined : "_blank"}
+            rel={target.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+            className="text-[#1D4ED8] underline decoration-[#BFCFF6] underline-offset-2 hover:decoration-[#1D4ED8]"
+          >
+            {match[2]}
+          </a>,
+        );
+      } else {
+        parts.push(<span key={key++}>{match[2]}</span>);
+      }
     } else if (match[4]) {
       parts.push(
         <strong key={key++} className="font-semibold text-[#141413]">
           {match[4]}
         </strong>,
+      );
+    } else if (match[5]) {
+      parts.push(
+        <em key={key++} className="italic">
+          {match[5]}
+        </em>,
       );
     }
     last = pattern.lastIndex;

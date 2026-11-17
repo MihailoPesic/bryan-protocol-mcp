@@ -82,10 +82,18 @@ export function extractTokens(raw: string): string[] {
   return Array.from(new Set(chosen)).slice(0, 12);
 }
 
-function cleanMarkdownText(text: string): string {
+function stripInlineHtmlTags(text: string): string {
   return text
-    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, "$1")
-    .replace(/[*_`~#]+/g, " ")
+    .replace(/<\/?(?:b|i|em|strong|u|s|br|p|span|font)[^>]*>/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function cleanMarkdownText(text: string): string {
+  return stripInlineHtmlTags(text)
+    .replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+    .replace(/[*_`~#>]+/g, " ")
     .replace(/\|/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -170,11 +178,12 @@ class ProtocolEngine {
     this.segs = bundle.segs.map(([doc_id, start_sec, text]) => {
       const doc = this.docById.get(doc_id);
       const baseUrl = doc?.url ?? `https://www.youtube.com/watch?v=${doc_id.replace(/^yt:/, "")}`;
+      const cleanText = stripInlineHtmlTags(text);
       const seg: IndexedSegment = {
         doc_id,
         start_sec,
-        text,
-        lower: text.toLowerCase(),
+        text: cleanText,
+        lower: cleanText.toLowerCase(),
         deep_link: `${baseUrl}&t=${start_sec}s`,
       };
       let list = this.segsByDoc.get(doc_id);

@@ -390,8 +390,14 @@ def scrape_blueprint_extra(data_dir: Path, workers: int = 1) -> list[dict[str, A
     # 3. Kate Tolo official site (katetolo.com)
     try:
         kt_html, _ = _http_get("https://katetolo.com/")
+        main_m = re.search(r"<main[^>]*>(.*?)</main>", kt_html, re.S)
         body_m = re.search(r"<body[^>]*>(.*?)</body>", kt_html, re.S)
-        kt_md = html_to_markdown(body_m.group(1) if body_m else kt_html)
+        kt_md = html_to_markdown(main_m.group(1) if main_m else (body_m.group(1) if body_m else kt_html))
+        kt_md = re.sub(
+            r"^(?:\[Skip to content\]\(#main-content\)\s*|\[Kate Tolo\]\(#\)\s*|- \[(?:About|Press|Career|Contact)\]\(#[^)]+\)\s*)+",
+            "",
+            kt_md,
+        ).strip()
         docs.append({
             "id": "kate:profile",
             "tier": 1,
@@ -597,7 +603,9 @@ def _parse_timedtext_xml(xml_text: str, video_id: str, chunk_seconds: int = 35) 
     for p in root.iter("p"):
         t_ms = int(p.attrib.get("t", 0))
         d_ms = int(p.attrib.get("d", 0))
-        text = html.unescape(" ".join("".join(p.itertext()).split())).strip()
+        text = html.unescape(" ".join("".join(p.itertext()).split()))
+        text = re.sub(r"</?(?:b|i|em|strong|u|s|br|p|span|font)[^>]*>", " ", text, flags=re.I)
+        text = " ".join(text.split()).strip()
         if not text:
             continue
         start = t_ms / 1000.0
