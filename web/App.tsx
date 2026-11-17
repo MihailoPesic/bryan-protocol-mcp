@@ -269,7 +269,7 @@ export function App() {
       {/* Main Split Workspace */}
       <div className="mx-auto flex max-w-6xl gap-10 px-4 py-8 sm:px-6">
         <Sidebar
-          activeQuery={activeQuery}
+          activeQuery={tab === "search" ? activeQuery : ""}
           onSelectQuery={(q) => void runSearch(q)}
           onOpenMcp={() => setTab("mcp")}
         />
@@ -378,13 +378,20 @@ export function App() {
                         onClick={() => setTab("changelog")}
                         className="text-xs font-medium text-[#1D4ED8] hover:underline"
                       >
-                        View all {stances.length} entries →
+                        {stances.length > 0 ? `View all ${stances.length} entries →` : "View all entries →"}
                       </button>
                     </div>
 
                     <div className="overflow-hidden rounded-md border border-[#E6E4DD] bg-white">
                       <div className="divide-y divide-[#EFECE6]">
-                        {featuredLedger.map((item) => (
+                        {featuredLedger.length === 0 ? (
+                          <div className="space-y-3 p-4">
+                            <div className="h-4 w-2/3 animate-pulse rounded bg-[#EFECE6]" />
+                            <div className="h-4 w-full animate-pulse rounded bg-[#EFECE6]" />
+                            <div className="h-4 w-5/6 animate-pulse rounded bg-[#EFECE6]" />
+                          </div>
+                        ) : (
+                          featuredLedger.map((item) => (
                           <div
                             key={item.id}
                             className="flex flex-col gap-2 p-4 transition-colors hover:bg-[#FAF9F6] sm:flex-row sm:items-start sm:justify-between sm:gap-4"
@@ -415,7 +422,8 @@ export function App() {
                               Receipts
                             </button>
                           </div>
-                        ))}
+                        ))
+                        )}
                       </div>
                     </div>
                   </section>

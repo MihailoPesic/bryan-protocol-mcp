@@ -82,8 +82,17 @@ export function extractTokens(raw: string): string[] {
   return Array.from(new Set(chosen)).slice(0, 12);
 }
 
+function cleanMarkdownText(text: string): string {
+  return text
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, "$1")
+    .replace(/[*_`~#]+/g, " ")
+    .replace(/\|/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function makeExcerpt(text: string, tokens: string[], maxLen = 400): string {
-  const clean = text.replace(/\s+/g, " ").trim();
+  const clean = cleanMarkdownText(text);
   if (clean.length <= maxLen) return clean;
   const lower = clean.toLowerCase();
   let bestPos = -1;
