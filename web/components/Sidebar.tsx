@@ -29,15 +29,32 @@ const GROUPS = [
     ],
   },
   {
+    heading: "Kate Tolo / Female",
+    items: [
+      { label: "Kate Tolo Overview", q: "kate tolo", dot: "bg-emerald-600" },
+      { label: "Cycle-Phased Protocol", q: "follicular luteal female protocol", dot: "bg-emerald-600" },
+      { label: "Kate's Skin Protocol", q: "kate tolo skin accutane", dot: "bg-emerald-600" },
+      { label: "Pregnancy Stack Rules", q: "pregnancy", dot: "bg-sky-600" },
+    ],
+  },
+  {
     heading: "Active Regimen",
     items: [
       { label: "Sleep Schedule", q: "sleep", dot: "bg-emerald-600" },
       { label: "Daily Routine", q: "my daily routine", dot: "bg-emerald-600" },
       { label: "Nutrition & Macros", q: "nutrition macros", dot: "bg-emerald-600" },
       { label: "Rx Prescriptions", q: "acarbose metformin", dot: "bg-emerald-600" },
+      { label: "Longevity Mix Actives", q: "longevity mix actives", dot: "bg-emerald-600" },
       { label: "Dry Sauna + Ice", q: "dry sauna", dot: "bg-emerald-600" },
       { label: "HBOT Protocol", q: "hbot hyperbaric", dot: "bg-emerald-600" },
       { label: "Psilocybin Trial", q: "psilocybin", dot: "bg-violet-600" },
+    ],
+  },
+  {
+    heading: "Historical Archive",
+    items: [
+      { label: "Jan 2024 31-Pill Stack", q: "historical archive step 2 supplement stack", dot: "bg-[#6F6E69]" },
+      { label: "Biomarker Records", q: "biomarkers current results", dot: "bg-[#6F6E69]" },
     ],
   },
 ];

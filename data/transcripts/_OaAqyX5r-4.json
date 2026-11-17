@@ -1,0 +1,27 @@
+{
+  "id": "yt:_OaAqyX5r-4",
+  "video_id": "_OaAqyX5r-4",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "trick or treat",
+  "url": "https://www.youtube.com/watch?v=_OaAqyX5r-4",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-10-31",
+  "duration_sec": 14,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 13,
+      "text": "[music] >> Okay. >> [music] >> Okay. Okay.",
+      "deep_link": "https://www.youtube.com/watch?v=_OaAqyX5r-4&t=0s"
+    }
+  ],
+  "metadata": {
+    "view_count": 527043,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

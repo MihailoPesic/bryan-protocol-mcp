@@ -1,0 +1,27 @@
+{
+  "id": "yt:H8k5S4jdDMo",
+  "video_id": "H8k5S4jdDMo",
+  "tier": 2,
+  "source_type": "kate_tolo_short",
+  "title": "i’m busy",
+  "url": "https://www.youtube.com/watch?v=H8k5S4jdDMo",
+  "channel": "Kate Tolo",
+  "published_at": "2026-08-23",
+  "duration_sec": 11,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 12,
+      "text": "I have a busy week. >> Do you? I mean, I feel like you >> Thursday, Nobu, Vegas Friday. Then I have a spray tan at 8:45. >> Oh my god.",
+      "deep_link": "https://www.youtube.com/watch?v=H8k5S4jdDMo&t=0s"
+    }
+  ],
+  "metadata": {
+    "view_count": 15992,
+    "author": "Kate Tolo",
+    "channel_id": "UCFmF6QhtcXSH-ON52pKwpvA",
+    "notes": ""
+  }
+}

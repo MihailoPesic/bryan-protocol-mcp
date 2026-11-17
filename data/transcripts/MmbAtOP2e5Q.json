@@ -1,0 +1,39 @@
+{
+  "id": "yt:MmbAtOP2e5Q",
+  "video_id": "MmbAtOP2e5Q",
+  "tier": 2,
+  "source_type": "kate_tolo_short",
+  "title": "i'm eating the same thing everyday for 90 days straight",
+  "url": "https://www.youtube.com/watch?v=MmbAtOP2e5Q",
+  "channel": "Kate Tolo",
+  "published_at": "2026-09-01",
+  "duration_sec": 52,
+  "description": "i'm eating the same thing everyday for 90 days straight",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 17,
+      "text": "I'm eating the exact same thing for the next 90 days so that we can track what changes inside my body while the food stays the same. One of the devices I use every single day is a CGM device. This blood glucose monitor is going to track exactly how my body responds to foods differently across the menstrual cycle.",
+      "deep_link": "https://www.youtube.com/watch?v=MmbAtOP2e5Q&t=0s"
+    },
+    {
+      "start_sec": 17,
+      "end_sec": 40,
+      "text": "There's a limitation in how most people measure their blood glucose. They [music] eat different things every day. That makes it hard to know where the change comes from. Is it something happening inside their body or is it the food? So, I'm removing that variable. At the same time, I'm measuring my hormones, my skin, my brain, even my metabolism. How am I burning fats and carbs differently? To our knowledge, this kind of controlled study has never been done before. This is a world first.",
+      "deep_link": "https://www.youtube.com/watch?v=MmbAtOP2e5Q&t=17s"
+    },
+    {
+      "start_sec": 40,
+      "end_sec": 53,
+      "text": "This is just one part of my experiment to be the most quantified female on Earth. And this one key metric might help us understand how female hormones are affecting everything throughout the body. If you're interested in our results, follow along.",
+      "deep_link": "https://www.youtube.com/watch?v=MmbAtOP2e5Q&t=40s"
+    }
+  ],
+  "metadata": {
+    "view_count": 27672,
+    "author": "Kate Tolo",
+    "channel_id": "UCFmF6QhtcXSH-ON52pKwpvA",
+    "notes": ""
+  }
+}

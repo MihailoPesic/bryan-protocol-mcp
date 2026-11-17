@@ -1,0 +1,33 @@
+{
+  "id": "yt:6E285sGA3es",
+  "video_id": "6E285sGA3es",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "Surprise! I eat chocolate every day. However, this specific chocolate is rigorously tested.",
+  "url": "https://www.youtube.com/watch?v=6E285sGA3es",
+  "channel": "Bryan Johnson",
+  "published_at": "2023-07-28",
+  "duration_sec": 44,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 35,
+      "text": "one thing I do on a daily basis is I have one tablespoon of dark chocolate there's five layers which we think about the first layer is chocolate is good for you which may erroneously lead to someone eating a Snickers bar the second layer is dark chocolate is good for you number three is dark chocolate untouched and for dark chocolate untouched tested for heavy metals and the fifth layer dark chocolate untouched tested for heavy metals with a high polyphenol count now that's five layers deep and this chocolate has met that criteria so you can do one or two things you can buy dark chocolate just make sure it's been tested for heavy metals make sure it meets a polyphenol count this",
+      "deep_link": "https://www.youtube.com/watch?v=6E285sGA3es&t=0s"
+    },
+    {
+      "start_sec": 35,
+      "end_sec": 45,
+      "text": "information is on the website we also will have a chocolate product available for purchase given how hard it's been for us to solve this ourselves we thought that making this available to others would be useful",
+      "deep_link": "https://www.youtube.com/watch?v=6E285sGA3es&t=35s"
+    }
+  ],
+  "metadata": {
+    "view_count": 1762851,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

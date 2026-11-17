@@ -21,15 +21,20 @@ This repo focuses on being a clean, citation-first MCP data source for tools lik
 
 ## Dataset
 
-Everything is pre-indexed in `data/bryan_protocol.db` (**266 documents**, **11,870 timestamped segments**, **25 structured stances**):
+Everything is pre-indexed in `data/bryan_protocol.db` (**643 documents**, **13,765 timestamped segments**, **35 structured stances**):
 
 | Tier | Source Type | Count | Notes |
 | --- | --- | ---: | --- |
-| Tier 1 | `official_protocol` | 29 | Pages from `protocol.bryanjohnson.com` (Daily Routine, Sleep, Nutrition, Exercise, Rx, Skin, Hair, Oral Care, HBOT, Sauna, Clean Water, Biomarkers, etc.) |
-| Tier 2 | `official_article` | 69 | Articles from `blueprint.bryanjohnson.com/blogs/news` |
-| Tier 2 | `official_video` & `official_stream` | 148 | 139 videos and 9 livestreams from `@BryanJohnson` on YouTube |
-| Tier 3 | `external_podcast` | 20 | Full-length appearances (Modern Wisdom, Rich Roll, Theo Von #644, Diary of a CEO x2, Lex Fridman #186, Impact Theory x3, FULL SEND, Jubilee, Doctor Mike, FLAGRANT, IMPAULSIVE, Jay Shetty, Mark Hyman, The Knowledge Project, Tim Ferriss, Piers Morgan, Axios) |
-| Stances | `stances.json` | 25 | Active, stopped, avoided, conditional, and experimental positions with dates and links |
+| Tier 1 | `official_protocol` | 29 | Current sections from `protocol.bryanjohnson.com` (Daily Routine, Sleep, Nutrition, Female Protocol, Pregnancy, Exercise, Rx, Skin, Hair, Oral Care, HBOT, Sauna, Clean Water, Biomarkers) |
+| Tier 1 | `kate_tolo_profile` | 1 | Kate Tolo's official profile and $2.6M Female Protocol summary (`katetolo.com`) |
+| Tier 2 | `official_article` | 95 | 77 articles from `blueprint.bryanjohnson.com/blogs/news` plus Blueprint & Immortals medical/supplement pages |
+| Tier 2 | `blueprint_product` | 82 | 50 Blueprint catalog products and 32 Immortals Rx/biomarker offerings |
+| Tier 2 | `historical_protocol` | 38 | `protocol-museum.bryanjohnson.com` historical pages and 2021-2023 monthly changelogs |
+| Tier 2 | `bryanjohnson_essay` | 20 | Full-text essays from `bryanjohnson.com` |
+| Tier 2 | `official_video`, `official_stream`, `official_short` | 285 | 139 videos, 9 livestreams, and 137 Shorts from `@BryanJohnson` on YouTube |
+| Tier 2 | `kate_tolo_video` & `kate_tolo_short` | 64 | 5 videos and 59 Shorts from `@katetolo` covering the Female Protocol and skin regimen |
+| Tier 3 | `external_podcast` | 29 | Full-length appearances including More Plates More Dates (4h14m), ZOE, NYT Interesting Times, ARK Invest, WIRED, Friends Keep Secrets, Live Well Be Well (Kate Tolo), Colin & Samir (Kate Tolo), Modern Wisdom, Rich Roll, Theo Von #644, Diary of a CEO (x2), Lex Fridman #186, Impact Theory (x3), FULL SEND, Jubilee, Doctor Mike, FLAGRANT, IMPAULSIVE, Jay Shetty, Mark Hyman, The Knowledge Project, Tim Ferriss, Piers Morgan, Axios |
+| Stances | `stances.json` | 35 | Active, stopped, avoided, conditional, and experimental positions (Bryan + Kate Tolo / Female Protocol) with dates and links |
 
 ## Quick Start
 

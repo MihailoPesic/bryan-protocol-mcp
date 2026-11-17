@@ -16,6 +16,21 @@ function withCors(res: Response): Response {
   return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
 }
 
+const SOURCE_TYPES = z.enum([
+  "official_protocol",
+  "official_article",
+  "official_video",
+  "official_stream",
+  "official_short",
+  "historical_protocol",
+  "bryanjohnson_essay",
+  "blueprint_product",
+  "kate_tolo_profile",
+  "kate_tolo_video",
+  "kate_tolo_short",
+  "external_podcast",
+]);
+
 function buildServer(): McpServer {
   const engine = getEngine();
   const server = new McpServer({
@@ -75,9 +90,7 @@ function buildServer(): McpServer {
     {
       query: z.string().describe("Search query"),
       tier: z.number().int().min(1).max(3).optional().describe("Optional tier filter (1=official protocol, 2=articles/videos, 3=podcasts)"),
-      source_type: z
-        .enum(["official_protocol", "official_article", "official_video", "official_stream", "external_podcast"])
-        .optional(),
+      source_type: SOURCE_TYPES.optional(),
       limit: z.number().int().min(1).max(30).default(10),
     },
     async ({ query, tier, source_type, limit }) => ({
@@ -110,9 +123,7 @@ function buildServer(): McpServer {
     "List ingested pages, articles, videos, and podcasts with pagination and optional tier/source_type filters.",
     {
       tier: z.number().int().min(1).max(3).optional(),
-      source_type: z
-        .enum(["official_protocol", "official_article", "official_video", "official_stream", "external_podcast"])
-        .optional(),
+      source_type: SOURCE_TYPES.optional(),
       limit: z.number().int().min(1).max(200).default(50),
       offset: z.number().int().min(0).default(0),
     },

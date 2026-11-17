@@ -34,7 +34,7 @@ const TOOLS = [
   ["what_would_bryan_do", "Returns matching stances plus Tier 1 protocol, Tier 2 articles/videos, and Tier 3 podcast timestamps."],
   ["check_stance_and_changes", "Checks if Bryan currently takes, stopped, or avoids a specific item with chronological mentions."],
   ["get_official_protocol", "Looks up authoritative sections from protocol.bryanjohnson.com."],
-  ["search_archive", "Full-text search across all documents and 11,870 timestamped transcript segments."],
+  ["search_archive", "Full-text search across all documents and timestamped transcript segments."],
   ["get_document", "Fetches full Markdown or transcript text for a document ID."],
   ["list_sources", "Paginated catalog of indexed protocol pages, articles, videos, and podcasts."],
   ["get_protocol_overview", "Archive counts, source tiers, and Tier 1 page index."],
@@ -63,7 +63,7 @@ export function McpPanel() {
           Connect via Model Context Protocol (MCP)
         </h2>
         <p className="mt-1 text-sm text-[#57564F]">
-          Read-only Streamable HTTP server backed by the same 266-source index. No API key required.
+          Read-only Streamable HTTP server backed by the full indexed archive. No API key required.
         </p>
       </div>
 

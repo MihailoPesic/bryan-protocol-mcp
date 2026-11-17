@@ -1,0 +1,33 @@
+{
+  "id": "yt:gPOEPacvVE8",
+  "video_id": "gPOEPacvVE8",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "There is such a thing as too much exercise",
+  "url": "https://www.youtube.com/watch?v=gPOEPacvVE8",
+  "channel": "Bryan Johnson",
+  "published_at": "2023-09-11",
+  "duration_sec": 55,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 36,
+      "text": "but why isn't it more why aren't you training more It's Tricky puzzle we're trying to solve I'm on a caloric restriction diet 2 000 calories and I take 100 pills a day and so the scientific question we're trying to solve is if in the year 2023 someone like myself wants to be an Explorer like Shackleton or Magellan and I want to say all right I want to go to the absolute limits of what's possible in the form of slowing my speed of Aging then we're trying to optimize for caloric input cardiovascular activity heart rate variability when you do too much exercise there's a U-shaped curve where you start inflicting harm on the system",
+      "deep_link": "https://www.youtube.com/watch?v=gPOEPacvVE8&t=0s"
+    },
+    {
+      "start_sec": 36,
+      "end_sec": 56,
+      "text": "and so you're trying to tune all of these things with caloric restriction it has a side effect of lowering testosterone so I need to supplement testosterone to get myself in the normal level and so we're just playing this really tricky trade-off space all across the board and we're always making Minor Adjustments here and there trying to maximize for this very narrow goal of slowing entropy in my body",
+      "deep_link": "https://www.youtube.com/watch?v=gPOEPacvVE8&t=36s"
+    }
+  ],
+  "metadata": {
+    "view_count": 2841625,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

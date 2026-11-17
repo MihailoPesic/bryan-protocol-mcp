@@ -1,0 +1,33 @@
+{
+  "id": "yt:HkPcNE0EEP8",
+  "video_id": "HkPcNE0EEP8",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "sponsored by @eight_sleep. We developed a machine learning model together and it just released today",
+  "url": "https://www.youtube.com/watch?v=HkPcNE0EEP8",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-09-03",
+  "duration_sec": 59,
+  "description": "Let’s be friends:\nImmortals: https://www.immortals.com/bryan\nX: https://www.x.com/bryan_johnson\nInstagram: https://www.instagram.com/bryanjohnson_\nTikTok: https://www.tiktok.com/@_bryan_johnson_",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 35,
+      "text": "Your bed may know more about you than your doctor and your partner. I'm obsessed with two things, biological age and sleep. So, I decided to ask my friends at Eight Sleep a crazy question. Can your bed determine how fast or slow you're aging? So, we built a machine learning model trained on over 2 million hours of sleep data. It reads functional biological age markers such as breathing depth, heart contraction, and timing of the recoil wave your heartbeat sends throughout your body. And uses all of this to create a sleep fingerprint. The algorithm can predict your age within",
+      "deep_link": "https://www.youtube.com/watch?v=HkPcNE0EEP8&t=0s"
+    },
+    {
+      "start_sec": 35,
+      "end_sec": 61,
+      "text": "3.3 years and flag things like diabetes, hypertension, and heart failure. Each with a detection score of 0.8 or above. Now, to put that into perspective, one is perfect. And it does all of this while you sleep. So, friends, this is not a diagnostic device. It is a step towards autonomous health where the things around us take care of us without our knowing. You spend a third of your life in bed and now it is becoming a tool to understand your body.",
+      "deep_link": "https://www.youtube.com/watch?v=HkPcNE0EEP8&t=35s"
+    }
+  ],
+  "metadata": {
+    "view_count": 224932,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

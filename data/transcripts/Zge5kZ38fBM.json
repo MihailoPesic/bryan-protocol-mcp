@@ -1,0 +1,39 @@
+{
+  "id": "yt:Zge5kZ38fBM",
+  "video_id": "Zge5kZ38fBM",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "you need to hear this",
+  "url": "https://www.youtube.com/watch?v=Zge5kZ38fBM",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-10-19",
+  "duration_sec": 51,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 30,
+      "text": "This is why you should wear ear plugs at concerts. Oh, wow. 111 decibels. You guys when the decibel level is over 80, you are legitimately losing your hearing. Here's what I do. I use an app on my phone that tracks the decibel levels in real time and my cut off is 80 decibels. Once the decibel levels are above 80, I will put in these custom molded ear plugs. You don't need to get specific molded ones, just get something to protect your hearing.",
+      "deep_link": "https://www.youtube.com/watch?v=Zge5kZ38fBM&t=0s"
+    },
+    {
+      "start_sec": 30,
+      "end_sec": 48,
+      "text": "There's also a safety feature on your iPhone to set the decibel level at 80. A general rule to follow, avoid prolonged exposure to any noise above 80 decibels. Damage can begin within 2 hours at that level. Uncorrected hearing loss doesn't just stop at the ears. Your risk of dementia can go up by five times.",
+      "deep_link": "https://www.youtube.com/watch?v=Zge5kZ38fBM&t=30s"
+    },
+    {
+      "start_sec": 48,
+      "end_sec": 52,
+      "text": "Friends, concerts are great, just protect your ears now so you don't pay the consequences later.",
+      "deep_link": "https://www.youtube.com/watch?v=Zge5kZ38fBM&t=48s"
+    }
+  ],
+  "metadata": {
+    "view_count": 413537,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

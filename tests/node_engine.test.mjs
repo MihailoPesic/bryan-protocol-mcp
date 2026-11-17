@@ -9,12 +9,17 @@ test("API handler serves overview, stances, query, and document", async () => {
   const ovRes = await apiHandler(new Request("https://example.test/api/overview"), dummyCtx);
   assert.equal(ovRes.status, 200);
   const ov = await ovRes.json();
-  assert.equal(ov.segment_count, 11870);
+  assert.ok(ov.segment_count >= 13000);
 
   const stRes = await apiHandler(new Request("https://example.test/api/stances"), dummyCtx);
   assert.equal(stRes.status, 200);
   const st = await stRes.json();
-  assert.equal(st.stances.length, 25);
+  assert.ok(st.stances.length >= 35);
+
+  const ktRes = await apiHandler(new Request("https://example.test/api/query?q=kate+tolo"), dummyCtx);
+  assert.equal(ktRes.status, 200);
+  const kt = await ktRes.json();
+  assert.equal(kt.explicit_stances[0].id, "stance:kate-tolo-female-protocol");
 
   const qRes = await apiHandler(new Request("https://example.test/api/query?q=seed+oils"), dummyCtx);
   assert.equal(qRes.status, 200);

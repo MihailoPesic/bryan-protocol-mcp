@@ -1,0 +1,33 @@
+{
+  "id": "yt:CBMV8BXn5HI",
+  "video_id": "CBMV8BXn5HI",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "Blueprint may seem extreme and eccentric, but it's changing people's lives. #health #biohacking",
+  "url": "https://www.youtube.com/watch?v=CBMV8BXn5HI",
+  "channel": "Bryan Johnson",
+  "published_at": "2023-03-10",
+  "duration_sec": 37,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 35,
+      "text": "my 16 and 18 year old boys are doing a lot of this my 12 year old daughter is not she is not yet subscribed to the program my parents are doing a lot of this and since I've been public about blueprint and open sourced everything I get several emails every day of people who will report their full adoption and how they're trying to do it so I think it's naturally gaining some traction with people who",
+      "deep_link": "https://www.youtube.com/watch?v=CBMV8BXn5HI&t=0s"
+    },
+    {
+      "start_sec": 35,
+      "end_sec": 38,
+      "text": "understand this potential and are trying it out",
+      "deep_link": "https://www.youtube.com/watch?v=CBMV8BXn5HI&t=35s"
+    }
+  ],
+  "metadata": {
+    "view_count": 2905545,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

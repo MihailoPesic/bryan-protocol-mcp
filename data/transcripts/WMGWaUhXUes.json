@@ -1,0 +1,51 @@
+{
+  "id": "yt:WMGWaUhXUes",
+  "video_id": "WMGWaUhXUes",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "I got a diagnosis and I’m excited to take it on",
+  "url": "https://www.youtube.com/watch?v=WMGWaUhXUes",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-07-06",
+  "duration_sec": 97,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 15,
+      "text": "Bryan Johnson says he's been diagnosed with autoimmune gastritis, a condition where the immune system literally attacks the stomach lining. >> It is true. My stomach is eating itself, and here is why that makes me excited.",
+      "deep_link": "https://www.youtube.com/watch?v=WMGWaUhXUes&t=0s"
+    },
+    {
+      "start_sec": 15,
+      "end_sec": 32,
+      "text": "For context, I was diagnosed with autoimmune thyroid disease at age 21. This is decades before I started my protocol. Autoimmune gastritis affects millions of people around the world, and it currently has no cure. We are going to try to solve that. A few days ago, I had a massive blood draw. We are sequencing 1 million of my immune cells.",
+      "deep_link": "https://www.youtube.com/watch?v=WMGWaUhXUes&t=15s"
+    },
+    {
+      "start_sec": 32,
+      "end_sec": 67,
+      "text": "We're doing this because you have trillions of immune cells in your body that operate as soldiers. Each one of these immune cells or soldiers carries a specific key that is designed to kill a specific threat, like a virus or bacteria. By identifying which of these immune cells are the rogue soldiers, from there we can design specific solutions to stop their attacks. There are a ton of ideas online on how we can find a cure. And friends, I just want to tell you I appreciate you. I appreciate the effort, the concern, and the want to find a cure. Now, when trying to find a cure, we are agnostic. We're going to follow the data. We want this to be",
+      "deep_link": "https://www.youtube.com/watch?v=WMGWaUhXUes&t=32s"
+    },
+    {
+      "start_sec": 67,
+      "end_sec": 96,
+      "text": "methodical and reproducible, so it can work in others, too. So, this likely isn't as simple as one cause, one fix. There is a stigma around getting a diagnosis. People think it's bad. I think it's great. The earlier you know, the better you are. I want to diagnose every single thing in my body. I genuinely appreciate all the kindness and support from all of you. I've received so many messages. We are going to share all of our learnings and the entire journey. I hope we find a cure. I hope this scales to millions of people.",
+      "deep_link": "https://www.youtube.com/watch?v=WMGWaUhXUes&t=67s"
+    },
+    {
+      "start_sec": 96,
+      "end_sec": 98,
+      "text": "It would be a fantastic win for the human race.",
+      "deep_link": "https://www.youtube.com/watch?v=WMGWaUhXUes&t=96s"
+    }
+  ],
+  "metadata": {
+    "view_count": 766816,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

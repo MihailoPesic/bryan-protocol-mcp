@@ -1,0 +1,27 @@
+{
+  "id": "yt:RQgCabo-mz0",
+  "video_id": "RQgCabo-mz0",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "slight flex",
+  "url": "https://www.youtube.com/watch?v=RQgCabo-mz0",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-10-09",
+  "duration_sec": 6,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 7,
+      "text": "[music] >> God damn.",
+      "deep_link": "https://www.youtube.com/watch?v=RQgCabo-mz0&t=0s"
+    }
+  ],
+  "metadata": {
+    "view_count": 581641,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

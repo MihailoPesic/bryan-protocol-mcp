@@ -343,5 +343,143 @@
       {"title": "Clean water", "url": "https://protocol.bryanjohnson.com/#clean-water"},
       {"title": "Products I use", "url": "https://protocol.bryanjohnson.com/#products-i-use"}
     ]
+  },
+  {
+    "id": "stance:kate-tolo-female-protocol",
+    "topic": "Kate Tolo's $2.6M Female Protocol",
+    "category": "kate_tolo_and_female_protocol",
+    "status": "active",
+    "summary": "Co-founder Kate Tolo runs a $2.6M/year female longevity protocol tracking ~1,900 biomarkers across 105 daily tasks and 50 devices across all four menstrual cycle phases.",
+    "dosage_or_rule": "7:00-9:00 AM daily clinic routine: saliva cortisol, basal thermometer + 24/7 internal temp pill, HRV breathing, resting metabolic rate, REM vaginal blood-flow sensor, circadian light, Visia scan, urinary FSH/LH/estrogen/progesterone, daily vaginal microbiome swab, CGM, Lumen breath analyzer, DUTCH Complete urine metabolites, pelvic floor biofeedback, Kernel Flow brain imaging, and red light.",
+    "rationale": "Built to map dynamic female physiology (e.g., cholesterol swinging ~19% across a cycle) after decades of female exclusion from drug trials; non-invasive testing identified endometriosis, adenomyosis, and polyendocrine metabolic ovarian syndrome within 42 days.",
+    "changed_at": "2026-09-09",
+    "sources": [
+      {"title": "Kate Tolo Official Profile", "url": "https://katetolo.com/"},
+      {"title": "Kate Tolo is Starting a Female Protocol", "url": "https://blueprint.bryanjohnson.com/blogs/news/kate-tolo-is-starting-a-female-protocol"},
+      {"title": "My $2.6M Morning Routine (YouTube)", "url": "https://www.youtube.com/watch?v=0ay_V0fVfLM"},
+      {"title": "Vaginal Microbiome Test Launch", "url": "https://blueprint.bryanjohnson.com/blogs/news/vaginal-microbiome-test-launch"}
+    ]
+  },
+  {
+    "id": "stance:kate-tolo-skin-protocol",
+    "topic": "Kate Tolo's Skin Protocol",
+    "category": "kate_tolo_and_female_protocol",
+    "status": "active",
+    "summary": "Kate Tolo reversed her Visia 8-marker skin age from 26 (at age 27) to 21 (at age 30) through strict UV avoidance, Blueprint nutrition/topicals, prescriptions, and clinical laser/collagen procedures.",
+    "dosage_or_rule": "Topicals/Rx: Blueprint Cleanser/Serum/Moisturizer, tretinoin, niacinamide, azelaic acid, BHA, microdose Accutane. Supplements: Collagen, EVOO, Longevity Mix, Omega-3, Essential Capsules, Advanced Antioxidants, hyaluronic acid, Vit C, copper, Vit D. Devices/Procedures: red light, microneedling, IPL/BBL, Sculptra, 1550-nm & 595-nm pulsed dye lasers, Sofwave.",
+    "rationale": "Documents that she reached age-21 multispectral skin markers without Botox or filler before later experimenting with subtle Botox/filler for facial balance.",
+    "changed_at": "2026-11-06",
+    "sources": [
+      {"title": "Kate Tolo's Skin Protocol", "url": "https://blueprint.bryanjohnson.com/blogs/news/kate-tolo-skin-protocol"},
+      {"title": "I'm 30 but my skin age is 21 (YouTube)", "url": "https://www.youtube.com/watch?v=8dGI41WyVfI"}
+    ]
+  },
+  {
+    "id": "stance:female-cycle-phased-protocol",
+    "topic": "Female Cycle-Phased Training, Nutrition & Supplements",
+    "category": "kate_tolo_and_female_protocol",
+    "status": "active",
+    "summary": "Blueprint adjusts female training intensity, macros, and electrolytes between the follicular phase (Day 1 to ovulation), luteal phase (post-ovulation to menses), and perimenopause/menopause.",
+    "dosage_or_rule": "Follicular: prioritize HIIT/heavy strength, higher carbs, 1.5 g/kg protein, 1,200 mg calcium. Luteal: shift to Zone 2 cardio & lighter strength, reduce carbs, raise protein to 2.0 g/kg + healthy fats, add +200-400 mg sodium/potassium, +100-200 mg magnesium, 300-600 mg ashwagandha, 200-400 mg rhodiola, 1-3 mg melatonin.",
+    "rationale": "Rising luteal progesterone increases core body temperature, reduces insulin sensitivity, raises catabolism, and drives water retention and sleep disruption.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Female Protocol", "url": "https://protocol.bryanjohnson.com/#female-protocol"},
+      {"title": "Nutrition Protocol", "url": "https://protocol.bryanjohnson.com/#nutrition"},
+      {"title": "Exercise Protocol", "url": "https://protocol.bryanjohnson.com/#exercise"}
+    ]
+  },
+  {
+    "id": "stance:pregnancy-protocol",
+    "topic": "Blueprint Stack During Pregnancy",
+    "category": "kate_tolo_and_female_protocol",
+    "status": "conditional",
+    "summary": "Distinguishes Blueprint whole-food staples safe to discuss with a doctor during pregnancy from longevity supplements that must be avoided while pregnant.",
+    "dosage_or_rule": "Generally compatible (with doctor clearance): Longevity Protein, Blueberry Nut Mix, EVOO, Collagen. AVOID during pregnancy: Longevity Mix, Ashwagandha, Curcumin, Red Yeast Rice, NR, Ca-AKG, Glucosamine Sulfate, Creatine, Sodium Hyaluronate, NAC. Add prenatal methylated B9/B12, magnesium 500-600 mg, iron 30 mg, calcium 1,200 mg, DHA/EPA 1,000-2,000 mg.",
+    "rationale": "Eliminates multi-ingredient longevity compounds lacking pregnancy safety data while maintaining >=100 g protein, >=30 g fiber, and zero alcohol.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Pregnancy Protocol", "url": "https://protocol.bryanjohnson.com/#pregnancy"}
+    ]
+  },
+  {
+    "id": "stance:green-giant-discontinued",
+    "topic": "Green Giant Drink & Standalone Amino Acids",
+    "category": "nutrition",
+    "status": "stopped",
+    "summary": "Discontinued his original morning 'Green Giant' drink (chlorella + spermidine + amino acids) in October 2023 while simplifying the stack.",
+    "dosage_or_rule": "Stopped Green Giant drink in Oct 2023; dropped standalone amino acid powder (total protein adequate) and moved actives into Longevity Mix + capsules.",
+    "rationale": "Consolidated dozens of messy loose powders and pills into a streamlined daily mix without losing protein adequacy.",
+    "changed_at": "2023-10-01",
+    "sources": [
+      {"title": "Step 1: Meal Prep (Protocol Museum)", "url": "https://protocol-museum.bryanjohnson.com/#step-1-meal-prep"}
+    ]
+  },
+  {
+    "id": "stance:prp-hair-injections",
+    "topic": "PRP Scalp Injections (+ Dutasteride / Exosomes)",
+    "category": "hair",
+    "status": "stopped",
+    "summary": "Discontinued platelet-rich plasma (PRP) + dutasteride/exosome scalp injections every 60-90 days after follow-up measurements showed no improvement.",
+    "dosage_or_rule": "Stopped PRP scalp injections. Current hair stack: Blueprint Peptide Shampoo & Serum, topical 5% minoxidil, 655 nm red light cap (6 min/day), and oral minoxidil 3.75 mg/day.",
+    "rationale": "Biometric tracking could not detect measurable hair improvements from PRP sessions.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Hair Health (Protocol Museum)", "url": "https://protocol-museum.bryanjohnson.com/#hair-health"},
+      {"title": "Hair Protocol (Current)", "url": "https://protocol.bryanjohnson.com/#hair"}
+    ]
+  },
+  {
+    "id": "stance:glp1-microdose",
+    "topic": "GLP-1 Microdosing for Longevity",
+    "category": "rx_prescriptions",
+    "status": "experimental",
+    "summary": "Bryan and Immortals promote physician-supervised GLP-1 microdosing (semaglutide/tirzepatide) for non-weight-loss cardiometabolic, anti-inflammatory, and longevity pathways.",
+    "dosage_or_rule": "Microdose protocols via Immortals paired with high protein intake and resistance exercise to protect skeletal muscle mass.",
+    "rationale": "Cites emerging evidence for inflammation reduction, cardiovascular protection, and neuroprotection at lower doses with fewer GI side effects.",
+    "changed_at": "2026-11-13",
+    "sources": [
+      {"title": "Immortals GLP-1 Microdose", "url": "https://immortals.com/pages/glp-microdose"},
+      {"title": "Is Muscle Linked to Longevity?", "url": "https://blueprint.bryanjohnson.com/blogs/news/is-muscle-linked-to-longevity"}
+    ]
+  },
+  {
+    "id": "stance:tadalafil-for-women",
+    "topic": "Daily Low-Dose Tadalafil for Women",
+    "category": "kate_tolo_and_female_protocol",
+    "status": "active",
+    "summary": "Immortals extends daily low-dose Tadalafil (PDE5 inhibitor) to women as well as men to support arterial elasticity, vascular circulation, and sexual health.",
+    "dosage_or_rule": "Physician-prescribed daily low-dose Tadalafil via Immortals.",
+    "rationale": "Tadalafil inhibits PDE5 and preserves cGMP signaling to support endothelial and vascular health regardless of biological sex.",
+    "changed_at": "2026-01-01",
+    "sources": [
+      {"title": "Tadalafil for Women (Immortals)", "url": "https://immortals.com/pages/tadalafil-for-women"}
+    ]
+  },
+  {
+    "id": "stance:nr-vs-nmn",
+    "topic": "NR vs. NMN (NAD+ Precursors)",
+    "category": "supplements",
+    "status": "conditional",
+    "summary": "In a 180-day head-to-head self-experiment (90 days TruNiagen NR 450 mg vs. 90 days Jinfiniti NMN 500 mg), Bryan found both worked comparably to raise intracellular NAD+ to age-16 levels.",
+    "dosage_or_rule": "Either NR (~450 mg) or NMN (~500 mg) guided by intracellular NAD+ testing (targeted ~52-55 uM).",
+    "rationale": "Both raised intracellular NAD+ cleanly; advocates testing baseline NAD+ levels rather than taking blindly.",
+    "changed_at": "2023-04-01",
+    "sources": [
+      {"title": "April 2023 Notes (Protocol Museum)", "url": "https://protocol-museum.bryanjohnson.com/2023/04/"}
+    ]
+  },
+  {
+    "id": "stance:brazil-nuts-selenium",
+    "topic": "Brazil Nuts & Selenium Limits",
+    "category": "nutrition",
+    "status": "conditional",
+    "summary": "Reduced Brazil nut intake down to 1/4 nut per day after bloodwork revealed elevated serum selenium (416 ug/L vs. 100-340 ug/L reference range).",
+    "dosage_or_rule": "Max ~1/4 Brazil nut/day unless blood selenium levels verify deficiency.",
+    "rationale": "Preventing selenium toxicity through serial blood biomarker testing.",
+    "changed_at": "2023-05-01",
+    "sources": [
+      {"title": "May 2023 Notes (Protocol Museum)", "url": "https://protocol-museum.bryanjohnson.com/2023/05/"}
+    ]
   }
 ]

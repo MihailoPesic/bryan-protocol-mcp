@@ -11,6 +11,9 @@ from bryan_protocol_mcp.db import DEFAULT_DATA_DIR, DEFAULT_DB_PATH, ProtocolDat
 from bryan_protocol_mcp.scraper import (
     scrape_all_youtube,
     scrape_blueprint_articles,
+    scrape_blueprint_extra,
+    scrape_bryanjohnson_essays,
+    scrape_protocol_museum,
     scrape_protocol_pages,
 )
 from bryan_protocol_mcp.server import run_http_server, run_stdio_server
@@ -31,10 +34,13 @@ def main(argv: list[str] | None = None) -> int:
     p_serve.add_argument("--db", type=Path, default=DEFAULT_DB_PATH)
 
     # ingest
-    p_ingest = sub.add_parser("ingest", help="Scrape official protocol, articles, and YouTube/podcast transcripts.")
+    p_ingest = sub.add_parser("ingest", help="Scrape official protocol, museum, essays, products, Kate Tolo, and YouTube.")
     p_ingest.add_argument("--protocol", action="store_true", help="Scrape protocol.bryanjohnson.com")
+    p_ingest.add_argument("--museum", action="store_true", help="Scrape protocol-museum.bryanjohnson.com")
     p_ingest.add_argument("--articles", action="store_true", help="Scrape blueprint.bryanjohnson.com blog articles")
-    p_ingest.add_argument("--youtube", action="store_true", help="Scrape @BryanJohnson YouTube & external podcasts")
+    p_ingest.add_argument("--extra", action="store_true", help="Scrape Blueprint/Immortals products, pages, and katetolo.com")
+    p_ingest.add_argument("--essays", action="store_true", help="Scrape bryanjohnson.com articles/essays")
+    p_ingest.add_argument("--youtube", action="store_true", help="Scrape @BryanJohnson, @katetolo, and external podcasts")
     p_ingest.add_argument("--all", action="store_true", help="Run all scrapers and rebuild the database")
     p_ingest.add_argument("--refresh", action="store_true", help="Re-scrape cached YouTube transcripts")
     p_ingest.add_argument("--workers", type=int, default=6)
@@ -70,16 +76,30 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if cmd == "ingest":
-        run_all = args.all or not (args.protocol or args.articles or args.youtube)
+        run_all = args.all or not (
+            args.protocol or args.museum or args.articles or args.extra or args.essays or args.youtube
+        )
         report: dict[str, object] = {}
         if run_all or args.protocol:
             pages = scrape_protocol_pages(args.data_dir)
             report["protocol_pages"] = len(pages)
             print(f"[ingest] protocol.bryanjohnson.com: {len(pages)} pages", file=sys.stderr)
+        if run_all or args.museum:
+            museum = scrape_protocol_museum(args.data_dir)
+            report["museum_docs"] = len(museum)
+            print(f"[ingest] protocol-museum.bryanjohnson.com: {len(museum)} docs", file=sys.stderr)
         if run_all or args.articles:
             arts = scrape_blueprint_articles(args.data_dir)
             report["blueprint_articles"] = len(arts)
-            print(f"[ingest] blueprint.bryanjohnson.com: {len(arts)} articles", file=sys.stderr)
+            print(f"[ingest] blueprint.bryanjohnson.com articles: {len(arts)} articles", file=sys.stderr)
+        if run_all or args.extra:
+            extra = scrape_blueprint_extra(args.data_dir)
+            report["extra_docs"] = len(extra)
+            print(f"[ingest] blueprint/immortals/katetolo extra: {len(extra)} docs", file=sys.stderr)
+        if run_all or args.essays:
+            essays = scrape_bryanjohnson_essays(args.data_dir)
+            report["essays"] = len(essays)
+            print(f"[ingest] bryanjohnson.com essays: {len(essays)} essays", file=sys.stderr)
         if run_all or args.youtube:
             yt_summary = scrape_all_youtube(
                 args.data_dir,

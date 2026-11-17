@@ -1,0 +1,51 @@
+{
+  "id": "yt:z4tJWlzcmzU",
+  "video_id": "z4tJWlzcmzU",
+  "tier": 2,
+  "source_type": "kate_tolo_short",
+  "title": "the system is failing us",
+  "url": "https://www.youtube.com/watch?v=z4tJWlzcmzU",
+  "channel": "Kate Tolo",
+  "published_at": "2026-09-10",
+  "duration_sec": 118,
+  "description": "why women in their 30's might get misdiagnosed with high cholesterol",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 18,
+      "text": "In one study, 6% of women were tested with high cholesterol in the first half of their cycle, but then when they were tested later in their cycle, they came back normal. As a premenopausal woman, your cholesterol can swing by up to 19% depending on when you get it tested in your cycle. Why does no one know this?",
+      "deep_link": "https://www.youtube.com/watch?v=z4tJWlzcmzU&t=0s"
+    },
+    {
+      "start_sec": 18,
+      "end_sec": 53,
+      "text": "Well, here are seven reasons why and all of them are easy change. First, most doctors just don't know. It's not in their training or guidelines. Second, the lab companies just haven't built for it. There's nothing stopping blood collection companies like LabCorp or Quest from adding this, but they set their own systems and they haven't prioritized it. And the individual who takes your blood has no way to put your data into the system saying, \"Here's your cycle day.\" Third, self-reported cycle days aren't 100% accurate. And sadly, most women were not taught how to track their cycle. And even a woman that tracks her cycle carefully may have imperfect information. For example, ovulation can change from month to month or sometimes it's skipped. For number",
+      "deep_link": "https://www.youtube.com/watch?v=z4tJWlzcmzU&t=18s"
+    },
+    {
+      "start_sec": 53,
+      "end_sec": 76,
+      "text": "four, you can confirm cycle day with blood testing or urine, but just no one's added that step yet. Number five, the data actually exists. There's enough information out there to build reference ranges, but validating it at scale would require more effort. Number six, cholesterol is often times checked more than once. So, theoretically, you'd be able to catch different parts of the cycle, but the problem is no one's timing that when they go and retest.",
+      "deep_link": "https://www.youtube.com/watch?v=z4tJWlzcmzU&t=53s"
+    },
+    {
+      "start_sec": 76,
+      "end_sec": 112,
+      "text": "Number seven, there's no central body that sets these standards and these reference ranges. So, each lab company is required to have the initiative to do it themselves. The thing is, the data to fix this is already collected. 1/3 of American women track their cycle on their phone and the bio banks have millions of cholesterol measurements, but nobody's put the two halves together. So, I'm running my own experiment. I'm collecting 14 million data points on how my body changes through my menstrual cycle. My skin, my blood, my brain, my grip strength, we're measuring everything. And we're spending $2.6 million on this. This will be the",
+      "deep_link": "https://www.youtube.com/watch?v=z4tJWlzcmzU&t=76s"
+    },
+    {
+      "start_sec": 112,
+      "end_sec": 120,
+      "text": "most quantified menstrual cycle ever. We'll be posting all the results we learn for free here. So, if you're interested in finding out what happens, follow along.",
+      "deep_link": "https://www.youtube.com/watch?v=z4tJWlzcmzU&t=112s"
+    }
+  ],
+  "metadata": {
+    "view_count": 22292,
+    "author": "Kate Tolo",
+    "channel_id": "UCFmF6QhtcXSH-ON52pKwpvA",
+    "notes": ""
+  }
+}

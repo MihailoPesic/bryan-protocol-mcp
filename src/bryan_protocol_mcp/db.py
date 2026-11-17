@@ -208,18 +208,24 @@ class ProtocolDatabase:
                     })
                     doc_count += 1
 
-            # 2. Tier 2: Blueprint official blog articles
-            articles_file = data_root / "articles" / "articles.json"
-            if articles_file.exists():
-                articles = json.loads(articles_file.read_text(encoding="utf-8"))
-                for item in articles:
+            # 2. Tier 2: Blueprint official blog articles, essays, museum, products/Kate profile
+            for json_rel, default_tier, default_type, default_site in (
+                ("articles/articles.json", 2, "official_article", "blueprint.bryanjohnson.com"),
+                ("museum/museum.json", 2, "historical_protocol", "protocol-museum.bryanjohnson.com"),
+                ("essays/essays.json", 2, "bryanjohnson_essay", "bryanjohnson.com"),
+                ("extra/extra_docs.json", 2, "blueprint_product", "blueprint.bryanjohnson.com"),
+            ):
+                src_file = data_root / json_rel
+                if not src_file.exists():
+                    continue
+                for item in json.loads(src_file.read_text(encoding="utf-8")):
                     self._insert_document(conn, {
                         "id": item["id"],
-                        "tier": 2,
-                        "source_type": "official_article",
+                        "tier": int(item.get("tier", default_tier)),
+                        "source_type": item.get("source_type", default_type),
                         "title": item["title"],
                         "url": item["url"],
-                        "channel_or_site": "blueprint.bryanjohnson.com",
+                        "channel_or_site": item.get("channel_or_site", default_site),
                         "published_at": item.get("published_at", ""),
                         "updated_at": item.get("updated_at", ""),
                         "duration_sec": 0,

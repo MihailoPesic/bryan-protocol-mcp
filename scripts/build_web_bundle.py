@@ -31,16 +31,23 @@ def build_bundle() -> dict[str, int]:
             "content": d["markdown"],
         })
 
-    articles_path = DATA_DIR / "articles" / "articles.json"
-    if articles_path.exists():
-        for d in json.loads(articles_path.read_text(encoding="utf-8")):
+    for rel, default_tier, default_type, default_site in (
+        ("articles/articles.json", 2, "official_article", "blueprint.bryanjohnson.com"),
+        ("museum/museum.json", 2, "historical_protocol", "protocol-museum.bryanjohnson.com"),
+        ("essays/essays.json", 2, "bryanjohnson_essay", "bryanjohnson.com"),
+        ("extra/extra_docs.json", 2, "blueprint_product", "blueprint.bryanjohnson.com"),
+    ):
+        src_path = DATA_DIR / rel
+        if not src_path.exists():
+            continue
+        for d in json.loads(src_path.read_text(encoding="utf-8")):
             docs.append({
                 "id": d["id"],
-                "tier": 2,
-                "source_type": "official_article",
+                "tier": int(d.get("tier", default_tier)),
+                "source_type": d.get("source_type", default_type),
                 "title": d["title"],
                 "url": d["url"],
-                "channel": "blueprint.bryanjohnson.com",
+                "channel": d.get("channel_or_site", default_site),
                 "published_at": d.get("published_at", ""),
                 "updated_at": d.get("updated_at", ""),
                 "duration_sec": 0,
@@ -65,7 +72,7 @@ def build_bundle() -> dict[str, int]:
             "content": (d.get("description") or "")[:900],
         })
         for s in d.get("segments", []):
-            segs.append([d["id"], int(s["start_sec"]), s["text"]])
+            segs.append([d['id'], int(s['start_sec']), s['text']])
 
     stances = []
     stances_path = DATA_DIR / "stances.json"

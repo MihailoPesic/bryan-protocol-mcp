@@ -25,10 +25,12 @@ type ViewTab = "search" | "changelog" | "sources" | "mcp";
 
 const FEATURED_LEDGER_IDS = [
   "stance:rapamycin",
+  "stance:kate-tolo-female-protocol",
   "stance:coffee-caffeine",
   "stance:cold-plunge",
   "stance:seed-oils-vs-evoo",
   "stance:testosterone-trt",
+  "stance:green-giant-discontinued",
   "stance:hgh-thymus",
   "stance:plasma-exchange",
   "stance:psilocybin",
@@ -118,15 +120,15 @@ export function App() {
 
   const loadSources = async () => {
     if (sourcesLoaded) return;
-    const page1 = await fetchJson<{ total: number; items: SourceItem[] }>(
-      "/api/sources?limit=200&offset=0",
-    );
-    let combined = page1.items;
-    if (page1.total > combined.length) {
-      const page2 = await fetchJson<{ total: number; items: SourceItem[] }>(
+    let combined: SourceItem[] = [];
+    let total = Infinity;
+    while (combined.length < total) {
+      const page = await fetchJson<{ total: number; items: SourceItem[] }>(
         `/api/sources?limit=200&offset=${combined.length}`,
       );
-      combined = combined.concat(page2.items);
+      total = page.total;
+      if (!page.items.length) break;
+      combined = combined.concat(page.items);
     }
     setSources(combined);
     setSourcesLoaded(true);
@@ -190,7 +192,15 @@ export function App() {
   const filteredSources = useMemo(() => {
     const q = sourceSearch.trim().toLowerCase();
     return sources.filter((s) => {
-      if (sourceTierFilter !== "all" && String(s.tier) !== sourceTierFilter) return false;
+      if (sourceTierFilter === "kate") {
+        const isKate =
+          s.source_type.includes("kate") ||
+          s.channel_or_site.toLowerCase().includes("kate") ||
+          s.title.toLowerCase().includes("kate tolo");
+        if (!isKate) return false;
+      } else if (sourceTierFilter !== "all" && String(s.tier) !== sourceTierFilter) {
+        return false;
+      }
       if (!q) return true;
       return (
         s.title.toLowerCase().includes(q) ||
@@ -292,7 +302,7 @@ export function App() {
                   >
                     protocol.bryanjohnson.com
                   </a>
-                  , 69 Blueprint essays, and 166 captioned videos &amp; podcasts.
+                  , Blueprint articles &amp; products, Protocol Museum archives, Kate Tolo's Female Protocol, and YouTube videos &amp; podcasts.
                 </p>
 
                 <form
@@ -337,7 +347,7 @@ export function App() {
 
                 {/* Mobile quick pills */}
                 <div className="mt-3 flex flex-wrap gap-1.5 lg:hidden">
-                  {["rapamycin", "seed oils", "coffee", "cold plunge", "psilocybin", "sleep"].map(
+                  {["rapamycin", "kate tolo", "seed oils", "coffee", "cold plunge", "psilocybin", "sleep"].map(
                     (term) => (
                       <button
                         key={term}
@@ -355,7 +365,7 @@ export function App() {
               {/* Loading / Error */}
               {searching && (
                 <div className="rounded-md border border-[#E6E4DD] bg-white p-4 text-sm text-[#57564F]">
-                  Querying 266 sources and 11,870 timestamps...
+                  Querying indexed sources and video timestamps...
                 </div>
               )}
 
@@ -837,8 +847,9 @@ export function App() {
                     [
                       ["all", "All Tiers"],
                       ["1", "Tier 1 · Official Protocol"],
-                      ["2", "Tier 2 · Articles & YouTube"],
+                      ["2", "Tier 2 · Articles, Museum & YouTube"],
                       ["3", "Tier 3 · Podcasts"],
+                      ["kate", "Kate Tolo"],
                     ] as const
                   ).map(([tier, label]) => (
                     <button

@@ -1,0 +1,33 @@
+{
+  "id": "yt:CYlonr0_uJM",
+  "video_id": "CYlonr0_uJM",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "Why you can't stop scrolling",
+  "url": "https://www.youtube.com/watch?v=CYlonr0_uJM",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-09-16",
+  "duration_sec": 58,
+  "description": "Let’s be friends:\nImmortals: https://www.immortals.com/bryan\nX: https://www.x.com/bryan_johnson\nInstagram: https://www.instagram.com/bryanjohnson_\nTikTok: https://www.tiktok.com/@_bryan_johnson_",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 35,
+      "text": "Right now, if you're watching this, part of your brain has gone quiet. Researchers put 56 people through two types of brain scans and had them scroll short videos. What they found was insane. Your brain has a cognitive control network that includes two regions. The DACC keeps track of what you're doing and determines if control is needed. The DLPFC implements top-down control including making you stop. In this study, when someone watched a video to the end, both of these brain regions deactivated below baseline. In other words, once you're immersed, the very",
+      "deep_link": "https://www.youtube.com/watch?v=CYlonr0_uJM&t=0s"
+    },
+    {
+      "start_sec": 35,
+      "end_sec": 59,
+      "text": "controls your brain relies on to stop gets compromised. So, here's the takeaway. The decision to stop scrolling has to happen before you start. One way to do this is to build systems like phone-free zones, fixed windows for social media, and even prioritizing long-form media over scrolling. The key is to have a hard cutoff. Otherwise, you're fighting an uphill battle your brain isn't equipped to win.",
+      "deep_link": "https://www.youtube.com/watch?v=CYlonr0_uJM&t=35s"
+    }
+  ],
+  "metadata": {
+    "view_count": 278595,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

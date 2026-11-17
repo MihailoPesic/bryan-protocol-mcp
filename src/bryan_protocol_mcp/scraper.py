@@ -1,16 +1,18 @@
-"""Pure-Python scrapers for protocol.bryanjohnson.com, blueprint.bryanjohnson.com, and YouTube."""
+"""Pure-Python scrapers for Blueprint sites, Protocol Museum, bryanjohnson.com, Kate Tolo, and YouTube."""
 
 from __future__ import annotations
 
 import html
 import json
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -25,8 +27,37 @@ _HEADERS = {
     "Cookie": "CONSENT=PENDING+999; SOCS=CAESEwgDEgk0ODE3Nzk3MjQaAmVuIAEaBgiA_LyaBg",
 }
 
+_BLUEPRINT_INFO_PAGES = (
+    "https://blueprint.bryanjohnson.com/pages/about",
+    "https://blueprint.bryanjohnson.com/pages/hsa-fsa",
+    "https://blueprint.bryanjohnson.com/pages/coas",
+    "https://blueprint.bryanjohnson.com/pages/find-my-protocol",
+    "https://blueprint.bryanjohnson.com/pages/longevity-mix-actives",
+    "https://blueprint.bryanjohnson.com/pages/12-longevity-actives",
+    "https://blueprint.bryanjohnson.com/pages/longevity-mix-vs-all-in-one-powders-v1",
+    "https://blueprint.bryanjohnson.com/pages/longevity-mix-consolidators-5-reasons-v1",
+    "https://blueprint.bryanjohnson.com/pages/developers",
+)
 
-def _http_get(url: str, data: bytes | None = None, extra_headers: dict[str, str] | None = None, retries: int = 3) -> tuple[str, dict[str, str]]:
+_IMMORTALS_INFO_PAGES = (
+    "https://immortals.com/pages/immortals-medicine",
+    "https://immortals.com/pages/glp-microdose",
+    "https://immortals.com/pages/tadalafil-for-women",
+    "https://immortals.com/pages/peptide-skin-complex",
+    "https://immortals.com/pages/biomarkers",
+    "https://immortals.com/pages/explore-treatments",
+    "https://immortals.com/pages/personalized-glp-1",
+    "https://immortals.com/pages/mens-sex-complex",
+    "https://immortals.com/pages/glp-1-treatments",
+)
+
+
+def _http_get(
+    url: str,
+    data: bytes | None = None,
+    extra_headers: dict[str, str] | None = None,
+    retries: int = 4,
+) -> tuple[str, dict[str, str]]:
     headers = dict(_HEADERS)
     if extra_headers:
         headers.update(extra_headers)
@@ -37,21 +68,37 @@ def _http_get(url: str, data: bytes | None = None, extra_headers: dict[str, str]
             with urllib.request.urlopen(req, timeout=25) as resp:
                 raw = resp.read().decode("utf-8", errors="replace")
                 return raw, dict(resp.headers)
+        except urllib.error.HTTPError as exc:
+            last_err = exc
+            if exc.code == 429 and data is None:
+                try:
+                    proc = subprocess.run(
+                        ["curl", "-fsSL", "--max-time", "25", "-A", headers["User-Agent"], url],
+                        capture_output=True,
+                        text=True,
+                        check=True,
+                    )
+                    return proc.stdout, {}
+                except Exception:  # noqa: BLE001
+                    pass
+                if attempt >= 1:
+                    break
+                time.sleep(2.5)
+            elif exc.code in (502, 503, 504):
+                time.sleep(2.0 * (attempt + 1))
+            else:
+                break
         except Exception as exc:  # noqa: BLE001
             last_err = exc
-            time.sleep(0.8 * (attempt + 1))
+            time.sleep(1.0 * (attempt + 1))
     raise RuntimeError(f"Failed fetching {url}: {last_err}")
 
 
-def scrape_protocol_pages(data_dir: Path) -> list[dict[str, Any]]:
-    """Fetch all published WordPress pages from protocol.bryanjohnson.com."""
-    out_dir = data_dir / "protocol"
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    all_pages: list[dict[str, Any]] = []
+def _fetch_wp_collection(base_url: str, endpoint: str) -> list[dict[str, Any]]:
+    items: list[dict[str, Any]] = []
     page_num = 1
     while True:
-        url = f"https://protocol.bryanjohnson.com/wp-json/wp/v2/pages?per_page=100&page={page_num}"
+        url = f"{base_url.rstrip('/')}/wp-json/wp/v2/{endpoint}?per_page=100&page={page_num}"
         try:
             body, hdrs = _http_get(url)
         except RuntimeError:
@@ -61,18 +108,25 @@ def scrape_protocol_pages(data_dir: Path) -> list[dict[str, Any]]:
         batch = json.loads(body)
         if not batch:
             break
-        all_pages.extend(batch)
+        items.extend(batch)
         total_pages = int(hdrs.get("X-WP-TotalPages") or hdrs.get("x-wp-totalpages") or 1)
         if page_num >= total_pages:
             break
         page_num += 1
+    return items
+
+
+def scrape_protocol_pages(data_dir: Path) -> list[dict[str, Any]]:
+    """Fetch all published WordPress pages from protocol.bryanjohnson.com."""
+    out_dir = data_dir / "protocol"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    all_pages = _fetch_wp_collection("https://protocol.bryanjohnson.com", "pages")
 
     saved: list[dict[str, Any]] = []
     for raw in all_pages:
         slug = raw.get("slug") or f"page-{raw['id']}"
         title = html.unescape(raw.get("title", {}).get("rendered", slug)).strip()
-        rendered_html = raw.get("content", {}).get("rendered", "")
-        markdown = html_to_markdown(rendered_html)
+        markdown = html_to_markdown(raw.get("content", {}).get("rendered", ""))
         excerpt = html_to_markdown(raw.get("excerpt", {}).get("rendered", ""))
         canonical_url = raw.get("link") or f"https://protocol.bryanjohnson.com/#{slug}"
 
@@ -102,6 +156,35 @@ def scrape_protocol_pages(data_dir: Path) -> list[dict[str, Any]]:
 
     (out_dir / "index.json").write_text(json.dumps(saved, indent=2, ensure_ascii=False), encoding="utf-8")
     return saved
+
+
+def scrape_protocol_museum(data_dir: Path) -> list[dict[str, Any]]:
+    """Fetch historical Blueprint pages & monthly changelogs from protocol-museum.bryanjohnson.com."""
+    out_dir = data_dir / "museum"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    docs: list[dict[str, Any]] = []
+
+    for endpoint in ("pages", "posts"):
+        rows = _fetch_wp_collection("https://protocol-museum.bryanjohnson.com", endpoint)
+        for raw in rows:
+            slug = raw.get("slug") or f"{endpoint}-{raw['id']}"
+            title = html.unescape(raw.get("title", {}).get("rendered", slug)).strip()
+            markdown = html_to_markdown(raw.get("content", {}).get("rendered", ""))
+            canonical_url = raw.get("link") or f"https://protocol-museum.bryanjohnson.com/#{slug}"
+            docs.append({
+                "id": f"museum:{endpoint}:{slug}",
+                "slug": slug,
+                "title": f"[Historical Archive] {title}",
+                "url": canonical_url,
+                "published_at": (raw.get("date_gmt") or "")[:10],
+                "updated_at": (raw.get("modified_gmt") or "")[:10],
+                "summary": markdown[:350],
+                "markdown": f"# {title} (Historical Protocol Museum)\n\n{markdown}".strip(),
+                "metadata": {"wp_id": raw.get("id"), "endpoint": endpoint},
+            })
+
+    (out_dir / "museum.json").write_text(json.dumps(docs, indent=2, ensure_ascii=False), encoding="utf-8")
+    return docs
 
 
 def _extract_article_from_html(url: str, fallback: dict[str, Any] | None = None) -> dict[str, Any]:
@@ -137,7 +220,6 @@ def _extract_article_from_html(url: str, fallback: dict[str, Any] | None = None)
         body_raw = html.unescape(str(meta_ld.get("articleBody") or fb.get("markdown") or ""))
         markdown = "\n\n".join(line.strip() for line in body_raw.splitlines() if line.strip())
 
-    # Trim trailing Shopify comment/newsletter noise if present inside <article>
     markdown = re.sub(r"\n+Leave a comment.*$", "", markdown, flags=re.S | re.I).strip()
 
     return {
@@ -153,7 +235,7 @@ def _extract_article_from_html(url: str, fallback: dict[str, Any] | None = None)
     }
 
 
-def scrape_blueprint_articles(data_dir: Path, workers: int = 8) -> list[dict[str, Any]]:
+def scrape_blueprint_articles(data_dir: Path, workers: int = 3) -> list[dict[str, Any]]:
     """Fetch all official blog articles listed in blueprint.bryanjohnson.com/sitemap_articles_1.xml."""
     out_dir = data_dir / "articles"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -217,6 +299,180 @@ def scrape_blueprint_articles(data_dir: Path, workers: int = 8) -> list[dict[str
     return articles
 
 
+def _scrape_shopify_page(url: str, source_type: str, channel: str, prefix: str) -> dict[str, Any]:
+    html_text, _ = _http_get(url)
+    slug = url.rstrip("/").split("/")[-1]
+    title_m = re.search(r"<title>(.*?)</title>", html_text, re.S)
+    title = html.unescape(title_m.group(1)).split("|")[0].split("–")[0].strip() if title_m else slug
+    main_m = re.search(r"<main[^>]*>(.*?)</main>", html_text, re.S)
+    body_html = main_m.group(1) if main_m else html_text
+    markdown = html_to_markdown(body_html)
+    return {
+        "id": f"{prefix}:{slug}",
+        "tier": 2,
+        "source_type": source_type,
+        "title": title,
+        "url": url,
+        "channel_or_site": channel,
+        "published_at": "",
+        "updated_at": "",
+        "summary": markdown[:350],
+        "markdown": f"# {title}\n\n{markdown}".strip(),
+        "metadata": {"slug": slug},
+    }
+
+
+def scrape_blueprint_extra(data_dir: Path, workers: int = 1) -> list[dict[str, Any]]:
+    """Fetch Blueprint/Immortals product specs, key informational pages, and Kate Tolo's official profile."""
+    out_dir = data_dir / "extra"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    docs: list[dict[str, Any]] = []
+
+    # 1. Blueprint & Immortals products JSON (exact supplement/Rx formulation specs)
+    for domain, prefix, site_label in (
+        ("https://blueprint.bryanjohnson.com", "bp_product", "blueprint.bryanjohnson.com"),
+        ("https://immortals.com", "imm_product", "immortals.com"),
+    ):
+        time.sleep(1.0)
+        try:
+            raw, _ = _http_get(f"{domain}/products.json?limit=250")
+            prods = json.loads(raw).get("products", [])
+        except Exception as exc:  # noqa: BLE001
+            print(f"[warn] {domain}/products.json skipped: {exc}")
+            prods = []
+        seen_handles: set[str] = set()
+        for p in prods:
+            handle = p.get("handle") or str(p.get("id"))
+            if handle in seen_handles:
+                continue
+            seen_handles.add(handle)
+            title = str(p.get("title") or handle).strip()
+            body_md = html_to_markdown(p.get("body_html") or "")
+            variants = [
+                f"{v.get('title')}: ${v.get('price')}"
+                for v in p.get("variants", [])[:5]
+                if v.get("price")
+            ]
+            tags = ", ".join(p.get("tags") or [])
+            full_md = f"# {title}\n\n{body_md}".strip()
+            if variants:
+                full_md += f"\n\nOptions: {'; '.join(variants)}"
+            if tags:
+                full_md += f"\n\nTags: {tags}"
+            docs.append({
+                "id": f"{prefix}:{handle}",
+                "tier": 2,
+                "source_type": "blueprint_product",
+                "title": title,
+                "url": f"{domain}/products/{handle}",
+                "channel_or_site": site_label,
+                "published_at": str(p.get("published_at") or "")[:10],
+                "updated_at": str(p.get("updated_at") or "")[:10],
+                "summary": body_md[:350] or title,
+                "markdown": full_md,
+                "metadata": {"vendor": p.get("vendor", ""), "product_type": p.get("product_type", "")},
+            })
+
+    # 2. Key Blueprint & Immortals informational pages
+    page_jobs = [
+        (u, "official_article", "blueprint.bryanjohnson.com", "bp_page") for u in _BLUEPRINT_INFO_PAGES
+    ] + [
+        (u, "official_article", "immortals.com", "imm_page") for u in _IMMORTALS_INFO_PAGES
+    ]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futs = {pool.submit(_scrape_shopify_page, u, st, ch, pre): u for u, st, ch, pre in page_jobs}
+        for fut in as_completed(futs):
+            try:
+                docs.append(fut.result())
+            except Exception:  # noqa: BLE001
+                continue
+
+    # 3. Kate Tolo official site (katetolo.com)
+    try:
+        kt_html, _ = _http_get("https://katetolo.com/")
+        body_m = re.search(r"<body[^>]*>(.*?)</body>", kt_html, re.S)
+        kt_md = html_to_markdown(body_m.group(1) if body_m else kt_html)
+        docs.append({
+            "id": "kate:profile",
+            "tier": 1,
+            "source_type": "kate_tolo_profile",
+            "title": "Kate Tolo - Co-Founder of Blueprint, Don't Die, and Immortals (Female Protocol)",
+            "url": "https://katetolo.com/",
+            "channel_or_site": "katetolo.com",
+            "published_at": "2026-01-01",
+            "updated_at": "2026-11-01",
+            "summary": kt_md[:350],
+            "markdown": f"# Kate Tolo - Official Profile & Female Protocol\n\n{kt_md}".strip(),
+            "metadata": {"person": "Kate Tolo"},
+        })
+    except Exception:  # noqa: BLE001
+        pass
+
+    (out_dir / "extra_docs.json").write_text(json.dumps(docs, indent=2, ensure_ascii=False), encoding="utf-8")
+    return docs
+
+
+def _parse_bryanjohnson_essay(url: str) -> dict[str, Any]:
+    html_text, _ = _http_get(url)
+    slug = url.rstrip("/").split("/")[-1]
+    h1_m = re.search(r"<h1[^>]*>(.*?)</h1>", html_text, re.S)
+    title = html.unescape(re.sub(r"<[^>]+>", "", h1_m.group(1))).strip() if h1_m else slug.replace("-", " ").title()
+    body_m = re.search(
+        r'<div[^>]*class="[^"]*(?:rich-text|w-richtext)[^"]*"[^>]*>(.*?)</div>\s*</div>',
+        html_text,
+        re.S | re.I,
+    )
+    markdown = html_to_markdown(body_m.group(1) if body_m else "")
+    if len(markdown) < 120:
+        return {"id": "", "markdown": ""}
+    date_m = re.search(
+        r"(January|February|March|April|May|June|July|August|September|October|November|December)\s+\d{1,2},\s+\d{4}",
+        html_text,
+    )
+    published = ""
+    if date_m:
+        try:
+            published = datetime.strptime(date_m.group(0), "%B %d, %Y").strftime("%Y-%m-%d")
+        except ValueError:
+            published = ""
+    return {
+        "id": f"essay:{slug}",
+        "tier": 2,
+        "source_type": "bryanjohnson_essay",
+        "title": title,
+        "url": url,
+        "channel_or_site": "bryanjohnson.com",
+        "published_at": published,
+        "updated_at": published,
+        "summary": markdown[:350],
+        "markdown": f"# {title}\n\n{markdown}".strip(),
+        "metadata": {"slug": slug},
+    }
+
+
+def scrape_bryanjohnson_essays(data_dir: Path, workers: int = 8) -> list[dict[str, Any]]:
+    """Fetch all essays from www.bryanjohnson.com/sitemap.xml."""
+    out_dir = data_dir / "essays"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    sitemap_xml, _ = _http_get("https://www.bryanjohnson.com/sitemap.xml")
+    urls = list(dict.fromkeys(re.findall(r"<loc>(https://www\.bryanjohnson\.com/articles/[^<]+)</loc>", sitemap_xml)))
+
+    essays: list[dict[str, Any]] = []
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futs = {pool.submit(_parse_bryanjohnson_essay, u): u for u in urls}
+        for fut in as_completed(futs):
+            try:
+                doc = fut.result()
+                if doc.get("id") and doc.get("markdown"):
+                    essays.append(doc)
+            except Exception:  # noqa: BLE001
+                continue
+
+    essays.sort(key=lambda d: (d.get("published_at", ""), d["id"]), reverse=True)
+    (out_dir / "essays.json").write_text(json.dumps(essays, indent=2, ensure_ascii=False), encoding="utf-8")
+    return essays
+
+
 def _walk_yt_videos(obj: Any, found: list[dict[str, str]], tokens: list[str]) -> None:
     if isinstance(obj, dict):
         if "lockupViewModel" in obj:
@@ -228,6 +484,20 @@ def _walk_yt_videos(obj: Any, found: list[dict[str, str]], tokens: list[str]) ->
                 rows = md.get("metadata", {}).get("contentMetadataViewModel", {}).get("metadataRows", [])
                 parts = [p.get("text", {}).get("content", "") for r in rows for p in r.get("metadataParts", [])]
                 found.append({"video_id": vid, "title": title, "meta": " | ".join(parts)})
+        elif "shortsLockupViewModel" in obj:
+            sl = obj["shortsLockupViewModel"]
+            vid = (
+                sl.get("onTap", {})
+                .get("innertubeCommand", {})
+                .get("reelWatchEndpoint", {})
+                .get("videoId", "")
+            )
+            if vid and len(vid) == 11:
+                title = (
+                    sl.get("overlayMetadata", {}).get("primaryText", {}).get("content")
+                    or sl.get("accessibilityText", "")
+                )
+                found.append({"video_id": vid, "title": title, "meta": "short"})
         elif "videoRenderer" in obj:
             vr = obj["videoRenderer"]
             vid = vr.get("videoId", "")
@@ -246,8 +516,15 @@ def _walk_yt_videos(obj: Any, found: list[dict[str, str]], tokens: list[str]) ->
             _walk_yt_videos(item, found, tokens)
 
 
-def discover_youtube_channel_videos(handle: str = "@BryanJohnson", tabs: tuple[str, ...] = ("videos", "streams")) -> list[dict[str, Any]]:
-    """Enumerate videos across a YouTube channel's tabs using Innertube pagination."""
+def discover_youtube_channel_videos(
+    handle: str = "@BryanJohnson",
+    tabs: tuple[str, ...] = ("videos", "streams", "shorts"),
+    video_source_type: str = "official_video",
+    stream_source_type: str = "official_stream",
+    short_source_type: str = "official_short",
+    channel_label: str | None = None,
+) -> list[dict[str, Any]]:
+    """Enumerate videos, streams, and shorts across a YouTube channel's tabs using Innertube pagination."""
     discovered: dict[str, dict[str, Any]] = {}
     for tab in tabs:
         url = f"https://www.youtube.com/{handle}/{tab}"
@@ -261,13 +538,15 @@ def discover_youtube_channel_videos(handle: str = "@BryanJohnson", tabs: tuple[s
         cver = cver_m.group(1) if cver_m else "2.20261101.00.00"
         data = json.loads(init_m.group(1))
 
+        # Verify tab actually exists on channel (YouTube falls back to Home tab when tab is absent)
         found: list[dict[str, str]] = []
         tokens: list[str] = []
         _walk_yt_videos(data, found, tokens)
 
         seen_toks: set[str] = set()
         pages = 0
-        while tokens and pages < 50:
+        max_pages = 3 if tab == "shorts" else 30
+        while tokens and pages < max_pages:
             tok = tokens.pop(0)
             if tok in seen_toks:
                 continue
@@ -286,17 +565,26 @@ def discover_youtube_channel_videos(handle: str = "@BryanJohnson", tabs: tuple[s
             tokens.extend(new_toks)
             pages += 1
 
-        source_type = "official_stream" if tab == "streams" else "official_video"
+        if tab == "streams":
+            source_type = stream_source_type
+        elif tab == "shorts":
+            source_type = short_source_type
+        else:
+            source_type = video_source_type
+
         for item in found:
             vid = item["video_id"]
             if vid not in discovered:
-                discovered[vid] = {
+                spec: dict[str, Any] = {
                     "video_id": vid,
                     "title_hint": item["title"],
                     "tab": tab,
                     "tier": 2,
                     "source_type": source_type,
                 }
+                if channel_label:
+                    spec["show"] = channel_label
+                discovered[vid] = spec
     return list(discovered.values())
 
 
@@ -309,8 +597,7 @@ def _parse_timedtext_xml(xml_text: str, video_id: str, chunk_seconds: int = 35) 
     for p in root.iter("p"):
         t_ms = int(p.attrib.get("t", 0))
         d_ms = int(p.attrib.get("d", 0))
-        parts = ["".join(p.itertext())]
-        text = html.unescape(" ".join("".join(parts).split())).strip()
+        text = html.unescape(" ".join("".join(p.itertext()).split())).strip()
         if not text:
             continue
         start = t_ms / 1000.0
@@ -330,11 +617,10 @@ def _parse_timedtext_xml(xml_text: str, video_id: str, chunk_seconds: int = 35) 
         buf_end = max(buf_end, end)
         elapsed = buf_end - buf_start
         if elapsed >= chunk_seconds or (elapsed >= 15 and text.endswith((".", "?", "!"))):
-            joined = " ".join(buf_texts)
             merged.append({
                 "start_sec": int(buf_start),
                 "end_sec": int(buf_end),
-                "text": joined,
+                "text": " ".join(buf_texts),
                 "deep_link": youtube_timestamp_url(video_id, buf_start),
             })
             buf_texts = []
@@ -363,7 +649,6 @@ def scrape_single_youtube_video(spec: dict[str, Any], out_dir: Path, refresh: bo
     if not api_key_m:
         return {"video_id": vid, "status": "error", "error": "INNERTUBE_API_KEY missing"}
 
-    # Web player response often carries full microformat publishDate
     web_pr: dict[str, Any] = {}
     pr_m = re.search(r"ytInitialPlayerResponse\s*=\s*(\{.*?\});", html_text)
     if pr_m:
@@ -394,7 +679,6 @@ def scrape_single_youtube_video(spec: dict[str, Any], out_dir: Path, refresh: bo
     )
     tracks = android_pr.get("captions", {}).get("playerCaptionsTracklistRenderer", {}).get("captionTracks", [])
     en_tracks = [t for t in tracks if (t.get("languageCode") or "").startswith("en")]
-    # Prefer human-authored English track (kind != 'asr') over auto-generated
     en_tracks.sort(key=lambda t: (0 if t.get("kind") != "asr" else 1, 0 if t.get("languageCode") == "en" else 1))
 
     segments: list[dict[str, Any]] = []
@@ -441,13 +725,29 @@ def scrape_single_youtube_video(spec: dict[str, Any], out_dir: Path, refresh: bo
     }
 
 
-def scrape_all_youtube(data_dir: Path, workers: int = 6, refresh: bool = False, max_videos: int | None = None) -> dict[str, Any]:
-    """Scrape official @BryanJohnson videos/streams plus curated external podcasts."""
+def scrape_all_youtube(
+    data_dir: Path,
+    workers: int = 8,
+    refresh: bool = False,
+    max_videos: int | None = None,
+) -> dict[str, Any]:
+    """Scrape @BryanJohnson (videos/streams/shorts), @katetolo (videos/shorts), and external podcasts."""
     transcripts_dir = data_dir / "transcripts"
     transcripts_dir.mkdir(parents=True, exist_ok=True)
 
-    channel_specs = discover_youtube_channel_videos("@BryanJohnson", tabs=("videos", "streams"))
-    specs_by_id: dict[str, dict[str, Any]] = {s["video_id"]: s for s in channel_specs}
+    specs_by_id: dict[str, dict[str, Any]] = {}
+    for s in discover_youtube_channel_videos("@BryanJohnson", tabs=("videos", "streams", "shorts")):
+        specs_by_id[s["video_id"]] = s
+
+    for s in discover_youtube_channel_videos(
+        "@katetolo",
+        tabs=("videos", "shorts"),
+        video_source_type="kate_tolo_video",
+        short_source_type="kate_tolo_short",
+        channel_label="Kate Tolo",
+    ):
+        if s["video_id"] not in specs_by_id:
+            specs_by_id[s["video_id"]] = s
 
     ext_file = data_dir / "external_podcasts.json"
     if ext_file.exists():
@@ -467,7 +767,7 @@ def scrape_all_youtube(data_dir: Path, workers: int = 6, refresh: bool = False, 
     if max_videos is not None:
         all_specs = all_specs[:max_videos]
 
-    summary = {"total": len(all_specs), "ok": 0, "cached": 0, "no_captions": 0, "error": 0, "errors": []}
+    summary: dict[str, Any] = {"total": len(all_specs), "ok": 0, "cached": 0, "no_captions": 0, "error": 0, "errors": []}
     with ThreadPoolExecutor(max_workers=workers) as pool:
         futs = {pool.submit(scrape_single_youtube_video, spec, transcripts_dir, refresh): spec for spec in all_specs}
         for fut in as_completed(futs):

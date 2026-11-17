@@ -1,0 +1,837 @@
+{
+  "id": "yt:Ak-YNIBqEjI",
+  "video_id": "Ak-YNIBqEjI",
+  "tier": 3,
+  "source_type": "external_podcast",
+  "title": "11 Marketing Rules Every YouTuber Needs to Know",
+  "url": "https://www.youtube.com/watch?v=Ak-YNIBqEjI",
+  "channel": "Colin and Samir",
+  "published_at": "2026-09-09",
+  "duration_sec": 3030,
+  "description": "Today on The Colin & Samir Show we sit down with Kate Tolo, the genius behind Bryan Johnson. Most people know Bryan from his quest to solve aging, but Kate is his co-founder, girlfriend, and the creative mind who took him from 2000 followers to over 10 million, a Netflix documentary, and a $60 million fundraising round. She walks us through her 11 rules for virality, backed up by the real emails, tweets, and thumbnails she's used to build the brand. It's a rare look at the actual playbook behind one of the internet's most viral personal brands.\n\n\n00:00 - Intro\n00:58 - Who Is Kate Tolo\n03:35 - The Nightclub Theory of Going Viral\n08:54 - Never Assume, Always Test\n11:36 - Why Failure Is Invisible\n14:09 - Start With Text First\n18:04 - Turning Press Publish LA Into a Pitch\n24:31 - Know Your Ticket Price\n26:48 - Ruthlessly Create Value\n30:22 - If It Works, Say It Again\n34:34 - Speak Simply\n35:57 - See It In Context\n39:07 - Publish Immediately\n41:47 - Timely vs Timeless Content\n43:03 - The Yes And Approach\n46:06 - Bryan's Girlfriend Reveal",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 19,
+      "text": "Today's guest is Kate Tolo. [music] You probably don't know her name, but you definitely know her work because of this guy, Bryan Johnson. He's the guy who wants to live forever, and you've probably seen some pretty wild posts from him online. Some quick context on Bryan. In 2013, he sold his payments company to PayPal for $800 million.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=0s"
+    },
+    {
+      "start_sec": 19,
+      "end_sec": 43,
+      "text": "Then, he had a lot of time on his hands. So, he decided that the [music] most interesting problem left for him to solve was death. So, he started spending over $2 million a year to turn himself into a science experiment trying to prove that he could stop aging or at least reverse it. But, he was doing this privately until 5 years ago, Kate pitched him a crazy idea. What if the science experiment was done in public?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=19s"
+    },
+    {
+      "start_sec": 43,
+      "end_sec": 58,
+      "text": "Kate is one of the sharpest content minds we've ever had on the show, and she walks us through the 11 rules that they use to go from 2,000 followers to over 10 million with the actual emails, tweets, and thumbnails printed out to [music] teach us the strategy. All right, Kate, welcome to the show.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=43s"
+    },
+    {
+      "start_sec": 58,
+      "end_sec": 81,
+      "text": ">> Thanks for having me, you guys. >> And who are you? >> I am the person behind Bryan Johnson's brand that a lot of people don't realize. I'm his co-founder. I'm also his girlfriend, and we started this project together 5 years ago. So, a lot of people know of Bryan Johnson. All of that viral content work, um, he and I have been working on together for the last 5 years.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=58s"
+    },
+    {
+      "start_sec": 81,
+      "end_sec": 99,
+      "text": ">> So, everything from what we see on YouTube to what we see on Twitter to even like you guys made a Netflix documentary all about his pursuit of >> immortality. >> Immortality. Yeah, not dying. >> Yeah. Yeah, so like 5 years ago, we started with 2,000 Instagram followers.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=81s"
+    },
+    {
+      "start_sec": 99,
+      "end_sec": 134,
+      "text": "Now, after just 5 years, we've got the Netflix documentary, 6 million followers. We just raised $60 million from a star-studded lineup from Alex Hormozi to Kim K, Paris Hilton, like pick your Jay Shetty. We reach about 300 million people monthly through press alone. So, the thing that makes us, I think, unique in the world, is not only have we been able to master the content game in one area, we've been able to do it across many, not only on social, but also in press, and also newsletters. And so, what I'm going to share with you today, when we first started this, I didn't even know what the word marketing",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=99s"
+    },
+    {
+      "start_sec": 134,
+      "end_sec": 164,
+      "text": "meant. Like, everything I've learned has been on the job. And so, I'm going to try and like simplify this into one big package of everything we've learned across the last 5 years. >> Your baseline is I have a really interesting story to tell. Like, if you told this story at a party, people are immediately interested. Here's a guy who's trying to live forever, and he's, you know, taking 100 pills a day, he's uh testing his son's blood. He's Like, there's there's so much in there that you're like, immediately, without even making a video, you're like, tell me more, tell me more, tell me more.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=134s"
+    },
+    {
+      "start_sec": 164,
+      "end_sec": 200,
+      "text": ">> That's right, yeah. >> So, I'm curious about like what you've learned about even YouTube content creation, um or internet content creation, when not everybody has a story like this. >> Yes. In developing all of this, I even tested it on my own channels. I had like 2,000 followers on Instagram, as well, something like that. I published my first video, and it got like over a million views, and that was on um air pollution in India, using the same framework. And that's So, that's like, you know, I I do genuinely believe in We post a lot on Twitter, for example, about very",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=164s"
+    },
+    {
+      "start_sec": 200,
+      "end_sec": 215,
+      "text": "benign topics like sleep, and we can still get a lot of traction behind it. So, yes, there's an element of the raw core interesting. I think that that's how we got started, but this framework has, in my experience, mass appeal, even for benign topics. >> Got it. >> Should we get into it?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=200s"
+    },
+    {
+      "start_sec": 215,
+      "end_sec": 232,
+      "text": ">> Yeah, let's do it. >> So, the first thing I wanted to share is how to create viral content. I think a lot of people don't know the space that they're operating in. They have a really complicated relationship with the algorithm.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=215s"
+    },
+    {
+      "start_sec": 232,
+      "end_sec": 251,
+      "text": ">> Mhm. And so, I like to think about it is I imagine that I'm at a nightclub, and let's just take Instagram for example. Imagine you're at the Instagram nightclub. It's the most exclusive club in town. Inside is far fewer slots than what's happening on the outside. Far fewer people on the inside than what's happening on the outside. And everyone's having the best time of their lives.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=232s"
+    },
+    {
+      "start_sec": 251,
+      "end_sec": 266,
+      "text": "They're dancing. It's vibing. It's like the place to be. Um inside the club, you can also have, you know, your posts up on the wall. That's kind of like paid advertising. But to really get inside the club, you need to be one of the people, and you need to be contributing in vibe to the club.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=251s"
+    },
+    {
+      "start_sec": 266,
+      "end_sec": 289,
+      "text": "The thing between you and being inside the club is the bouncer. And the bouncer is the algorithm. And you're currently in line trying to get into the club. And so, there's a couple of things to note about this. Your only job in creating content is to understand what the bouncer needs. You need to befriend the bouncer. The bouncer wants people inside to have a great time. So, the bouncer never wants the people to leave.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=266s"
+    },
+    {
+      "start_sec": 289,
+      "end_sec": 317,
+      "text": "It's dystopian, but it's true. Well, if they do leave, they want to bring their friends, come back tomorrow, and just like constantly be in the club. So, the bouncer's looking for highly emotional, engaging content. Doesn't really care what kind of emotion, whether it's hopeful, sad, shocking, scary, insightful, educational. Some sort of They it He wants the people on the inside to feel deeply.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=289s"
+    },
+    {
+      "start_sec": 317,
+      "end_sec": 333,
+      "text": "And the good thing about the bouncer is that that's the exchange. You don't need to worry about how many followers you have, whether or not to post every Tuesday or not, whether or not to post 100 times or one time. It's just create good content that people on the inside have a good time with.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=317s"
+    },
+    {
+      "start_sec": 333,
+      "end_sec": 349,
+      "text": "And the other thing that I think a lot of people don't realize about the bouncer is that you can try 100 times. And if you don't succeed, that's actually good because the people on the inside don't ever see. So, if you get 100 views, there's literally no risk for that.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=333s"
+    },
+    {
+      "start_sec": 349,
+      "end_sec": 370,
+      "text": "There's no downside. So, the best thing to do is to intuitively feel the relationship with bouncer. Post, post, post. If one of you get If one of your videos gets 200 views versus your average of 100 views, there's some sort of signal there that you can start to follow. And there's no risk in continuing to post. So, I always say like try and try and try and get it get inside the the algorithm.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=349s"
+    },
+    {
+      "start_sec": 370,
+      "end_sec": 385,
+      "text": "So, that's how I think about content. >> So, the the way I heard that is like you want to be the person who walks in with a tray of shots. >> Yes. >> Right? Like literally equivalently to What are you providing to the party that makes the party better?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=370s"
+    },
+    {
+      "start_sec": 385,
+      "end_sec": 401,
+      "text": ">> 100%. >> Is the mental model of how you think about it? >> Yes. >> Yeah, it's interesting. It's like you're walking up to the bouncer with like new things in your hand. I also like the visual of if you fail and the bouncer says you can't get in, no one inside knows you couldn't get in anyway. >> Yeah. Yeah, there's literally no risk.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=385s"
+    },
+    {
+      "start_sec": 401,
+      "end_sec": 416,
+      "text": "And in fact, you're highly And the cool thing is the bouncer's on your side. Like the bouncer is like if you come with something good, great. Love you. Come on in. Like So, it's not this um people have this like mysterious relationship. It's like no, they just want the people on the inside to have a good time. Like that's your only job.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=401s"
+    },
+    {
+      "start_sec": 416,
+      "end_sec": 433,
+      "text": ">> You know, it's it feels like in today's world, it does feel extremely high stakes to not get in. >> Yes. >> It feels like you will be laughed at in some shape or form, right? Or like that. >> Yeah. >> But it's interesting note to say no one will know if you just keep trying. Yeah. >> truth. Yeah. >> Yeah.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=416s"
+    },
+    {
+      "start_sec": 433,
+      "end_sec": 450,
+      "text": ">> Samir and I often talk about uh this party analogy in terms of brands. Like if you're going to partner with a brand, it's like inviting a friend to the party. >> Mhm. >> Right? So, you want to make sure that you bring a brand who can hang out at the party and elevates the experience for everyone so that they're not like \"Ooh, I don't want that person coming back anymore.\" >> 100%.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=433s"
+    },
+    {
+      "start_sec": 450,
+      "end_sec": 486,
+      "text": ">> never really thought about the fact that I too should be thinking about >> What you're bringing to the party. >> Yeah, yeah, yeah. >> Yeah, I think it's a really good That's a really helpful model, honestly. Like what are we bringing >> Yeah. >> to this party to make it a better party. >> So, Instagram is one club, but you've got like a whole lineup of clubs. You've got um you know, YouTube, all these social places, but you've also got the New York Times. I think a lot of people don't realize that literally any company that puts out content these days is a nightclub. So, the New York Times homepage is a highly curated, optimized homepage just like the YouTube homepage of the various title thumbnails of their stories, and that you best believe",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=450s"
+    },
+    {
+      "start_sec": 486,
+      "end_sec": 502,
+      "text": "they're A/B testing that to figure out what does their audience, the people inside their club, best enjoy with. And maybe that's more like a slightly upscale, like slightly more New York bougie vibe um for their club. And so, you're you're trying to create like as a journalist, that's now their job.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=486s"
+    },
+    {
+      "start_sec": 502,
+      "end_sec": 528,
+      "text": "They're content creators. And same thing for even take something like uh an iPhone application home screen. That is a club, too. And if Uber Eats is thinking about they're competing for 10 slots on your homepage. They they need to make theirs the best vibe they possibly can to compete with the various other things that are trying to get your attention. So, we live in this attention economy nowadays where everyone is operating with the same nightclub model.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=502s"
+    },
+    {
+      "start_sec": 528,
+      "end_sec": 550,
+      "text": ">> So, should we get into the cuz it feels like it feels like previous >> is it. What you guys see on the table here are my 11 rules for virality. And so, this is number one. Never assume, always test because even someone who's been in this world for a long time and has a pretty strong bias to what's going to work, always test.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=528s"
+    },
+    {
+      "start_sec": 550,
+      "end_sec": 566,
+      "text": "So, that's that's example number one. So, now we're inside the email, and this is above the fold. So, they've the subject lines are the same. The only thing we're testing here is the copy above the product. So, just two copywriting examples.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=550s"
+    },
+    {
+      "start_sec": 566,
+      "end_sec": 582,
+      "text": ">> By the way, just to clarify, this uh this is what got me, and I'm a subscriber to this to the Daily Mix. Yeah. >> So, just just so you know >> So, you know you know the answer? >> I don't I can tell you what got me, but I have purchased this on a subscription, and I've been a subscriber for the past 18 months. >> Amazing. >> Take it every morning.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=566s"
+    },
+    {
+      "start_sec": 582,
+      "end_sec": 611,
+      "text": ">> Hey, it's awesome. [laughter] Yeah. >> Yeah, there's two uh uh it What would you call these? Promotions? Like how how do you just pitches uh calls to action? >> Yeah. >> Calls to action. One says, this is for Blueprint's Longevity Mix. Says, nutritionally comparable to 1,808 calories of food, 13 health actives to support energy, metabolism, recovery, and vitality. Start Longevity Mix. The other one says, >> Eat kilos of food or have one scoop.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=582s"
+    },
+    {
+      "start_sec": 611,
+      "end_sec": 631,
+      "text": ">> Drink these 13 key nutrients daily. I'm going to definitively say B. >> Um yeah, I I would say B just out of simplicity. >> But now I'm second-guessing because of the word nutritionally, but let's just both go B. >> That would be correct. Yeah. And so my argument would also be the same. Like that's the cool thing about content is you can never really know what actually worked or didn't work, right? It's just a guess.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=611s"
+    },
+    {
+      "start_sec": 631,
+      "end_sec": 649,
+      "text": ">> Yeah. >> But my guess would also be the simplicity here. They're easy to understand. And also it feels um visually, like kilos of food, you can kind of imagine what that looks like. The word calories is something that people care about, whereas the nutritionally is it's it almost starts to get dense in people's minds.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=631s"
+    },
+    {
+      "start_sec": 649,
+      "end_sec": 673,
+      "text": ">> The word nutritionally is Yeah, it's very dense, and I think what we've learned in copywriting is the mix of emotional and rational >> Mhm. Yes. >> sentences, right? Or even pitches. >> Yes. >> And that you should over-index on the emotional, right? Like somebody saying jeans at $60 or under. It's like you're mostly telling me the rational part of my brain, which doesn't really drive as much decision-making as the emotional part.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=649s"
+    },
+    {
+      "start_sec": 673,
+      "end_sec": 695,
+      "text": ">> Totally. >> But if you said like I don't know. I mean, even you look at Levi's, like it rarely pitches you the the rational thing. It just shows you a cool lifestyle. Or like Wrangler, it's showing you a cool lifestyle. Um so here it's like eat eat kilos of food or have one scoop, that's more emotional where it's like oh, cool. I could either do the hard thing or the easy thing.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=673s"
+    },
+    {
+      "start_sec": 695,
+      "end_sec": 712,
+      "text": ">> Yes. Yes. >> Which I guess is also irrational, so. >> Number two. >> You can try and try again and actually failure is invisible. >> That's so interesting cuz I feel like failure is wildly visible. It's one of my anxieties. >> We may be a slightly different case though because we make videos about often making videos.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=695s"
+    },
+    {
+      "start_sec": 712,
+      "end_sec": 730,
+      "text": ">> [laughter] >> And so our audience is very plugged in in the moment that one of our videos doesn't do well. They're there immediately to even try and workshop it with us. It's not always a a hate comment. It's \"Ooh, I noticed it didn't do too well.\" So I think we're a bit of a different case.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=712s"
+    },
+    {
+      "start_sec": 730,
+      "end_sec": 765,
+      "text": ">> I functionally agree with you here, but it also depends on where you get to with your brand because failure is invisible in the beginning. >> If that's the case, if if 30,000 people watch 20 videos and typically you want to hit like 200,000 or something like that. Even in that case, like I don't want to diminish the 30,000, but like that's practically invisible for the scale that you're trying to get at. And so those 30,000 people I maybe you can relate to them cuz like that's true for Instagram too. Even if I post if I've got 2,000 followers and I post a video and I get 100 views, it's going to feel the same as what you're talking about.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=730s"
+    },
+    {
+      "start_sec": 765,
+      "end_sec": 787,
+      "text": "Those 100 people that watched are probably going to be closest people to me that the algorithm served the content to. And so they're the ones that are going to see this failure. But in the grand scheme of things, it's not you know, so like in someday when you guys have 20 million followers, uh subscribers, um that 30,000 number is going to feel insignificant. You know what I'm saying?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=765s"
+    },
+    {
+      "start_sec": 787,
+      "end_sec": 809,
+      "text": "And so can you relate to it in that same way now? >> Yeah, hard for me to think about that cuz I think as I'm getting older, I'm getting more astonished by smaller numbers. So like 30,000 people watching something if they watch for a long period of time, is it actually feels almost more substantial to me now than you know, probably 4 years ago when it's like it needs to be 700,000 or a million people.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=787s"
+    },
+    {
+      "start_sec": 809,
+      "end_sec": 825,
+      "text": ">> Mhm. >> Harder for me to conceptualize that amount of people, but I understand what you're saying. That >> Mhm. >> the the the basis of this, I think, is correct that if 100 people watch an Instagram reel, that would give me a lot of anxiety, but it's on it's like 100 people watched it, and the other people didn't even see it.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=809s"
+    },
+    {
+      "start_sec": 825,
+      "end_sec": 840,
+      "text": ">> Right. Sometimes it depends how you value the platform, too. You know, I for for TikTok for me, I couldn't care less, personally, if something got 100 views or, you know, 10 million. >> Right. >> It's just like I don't really feel it >> Yeah. >> in the same way. Whereas YouTube, it's just so core to who we are that >> Yeah.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=825s"
+    },
+    {
+      "start_sec": 840,
+      "end_sec": 867,
+      "text": ">> Yeah. >> And also, the relationship is so rich on YouTube, >> [clears throat] >> where like it feels like you really do know these people cuz you sit with them for so long. So, yeah, I get that. Okay, should we look at number three? >> Mhm. >> So, this is start in text first. And so, this is a philosophy that I try to um tell the team on how to write content, and I always tell them start in text first, because if you can perfect the text storytelling, everything >> 1 >> becomes 1,000% agree.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=840s"
+    },
+    {
+      "start_sec": 867,
+      "end_sec": 887,
+      "text": ">> Mhm. >> Like, as a visual person who hates copywriting, >> Yes. >> I still start start in text. >> Like, what does it read like an essay? If it does, then it's a good story. Or like, you can you you can find the gaps in the story if you write the essay. >> Yes, exactly. So, um here's an example of this. So, um what I'm going to give you each this and just flick through them. Cool.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=867s"
+    },
+    {
+      "start_sec": 887,
+      "end_sec": 922,
+      "text": "So, what you have in your hands is a text format, >> Mhm. >> and you start with that, and then how do you visualize that in imagery comes next. >> Got it. That's cool. Yeah, so this says, \"Five years ago, I decided to become a scientific experiment. I peed in cups, plucked my hair, ejaculated into containers, spit in tubes, ultrasounds, MRIs, sequenced my genome.\" Bunch of list of things that was done, and then it says, \"If it can be measured, we measured it.\" And so then, we're seeing images of basically the reality of this stuff happening. The",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=887s"
+    },
+    {
+      "start_sec": 922,
+      "end_sec": 945,
+      "text": "visuals against this. The B-roll, basically. >> Let's say I'm trying to do a product photo shoot. You know, like without that anchoring storytelling, I might decide to put my product against a white wall, take a photo of it. But if you if you look at it from the lens of, \"Well, this is a scientific experiment and I have this clear story,\" then all of a sudden you have a petri dish as the container for your product.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=922s"
+    },
+    {
+      "start_sec": 945,
+      "end_sec": 964,
+      "text": ">> Oh, I see. So, like these capsules being photographed, this is product photography. >> Yes. That's on our website. That is how we sell our essential capsules. >> Okay. That's really good. And this tells the story. >> Yes. >> That this is the uh summation of science.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=945s"
+    },
+    {
+      "start_sec": 964,
+      "end_sec": 979,
+      "text": ">> Yes. That's right. That's right. >> That's really good. That's really good. >> I'm glad. Okay, cool. >> I I think um what we're saying here feels so fundamental. Both of us grew up playing sports and I think about this all the time of like the coaches would always preach fundamentals.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=964s"
+    },
+    {
+      "start_sec": 979,
+      "end_sec": 1001,
+      "text": ">> Mhm. >> And I I remember I would like you would hear it in as Steven Bartlett says, it would turn into wallpaper. Like everyone said it so often that you'd be like, \"Whatever. Let me I don't even know what you're talking about anymore.\" And you say the fundamentals. And I think about that in the context of content creation now of what are the fundamentals that you overlook so easily.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=979s"
+    },
+    {
+      "start_sec": 1001,
+      "end_sec": 1022,
+      "text": "And it's even down to recently like we were doing photo shoots without reference photos. >> Yeah, totally. >> That is such a simple thing to do of like, \"What is the photo we're trying to take? >> Yeah. >> Let's have a reference photo.\" >> Yeah, articulate it, folks. >> Just Just let's just see it so everyone knows what we're trying to do rather than, \"We'll take some photos.\" >> Mhm.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1001s"
+    },
+    {
+      "start_sec": 1022,
+      "end_sec": 1039,
+      "text": ">> It has been I I mean like substantially different. >> Game changer, yeah. >> And what you're showing us here I think is like beyond even reference photos, what's the story we want someone to gather from the photo. >> Correct. Exactly. >> That's yeah, that's really good. I I firmly agree with starting text first. >> Amazing.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1022s"
+    },
+    {
+      "start_sec": 1039,
+      "end_sec": 1059,
+      "text": ">> How to write text though first? That's that's quite a difficult challenge, but it's actually quite simple. And so the way I think about it is three steps on writing my If I go down into a Google document, I'm like, okay, I want to tell a story about sleep. So the first step is articulate in words as simply as possible. Don't worry about marketing what you're trying to say.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1039s"
+    },
+    {
+      "start_sec": 1059,
+      "end_sec": 1088,
+      "text": "So frequently when we're trying to story tell, we're not even clear on what we're trying to say. Then I take that and I rewrite it from the value of how can I create value for the person listening? So I take that exact wording and I say, okay, how can I create value? And I rewrite it. Then the third step is I say, what is the most gossipy element of this text? And then I pull it up to the front. Is there something you guys would want to go viral?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1059s"
+    },
+    {
+      "start_sec": 1088,
+      "end_sec": 1125,
+      "text": ">> I'm terrified of virality. Um, I mean, what are Let's think about what we're marketing right now. Like Press Publish is a Yeah. >> I think our event is a is a great one to to stick with. We're having an event on May 28th called Press Publish LA. Yeah. >> Okay, cool. >> Tell tell me about it. >> Um, it's very much this this moment we're bringing 500 creators and people in the entertainment industry to discuss the future of media both from like panels that happen on stage, but also just to be in the same room. It's at the Fox Studios lot in LA and it's this acknowledgement of the merging of these two worlds of the independent",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1088s"
+    },
+    {
+      "start_sec": 1125,
+      "end_sec": 1158,
+      "text": "digital creator and the institution that has been Hollywood have kind of finally come to a head and agreed they have to figure out how to work together. We've seen that through the headlines of like Netflix making deals with creators. Seen it through like YouTube is now carrying the Oscars. There's this like meshing and acknowledgement that the future of entertainment is happening both from these independent players as well as the legacy players. So we want to be responsible for getting them in the same room and >> Okay. And now can we take all of that and what value does it bring to the person who comes to that room?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1125s"
+    },
+    {
+      "start_sec": 1158,
+      "end_sec": 1178,
+      "text": ">> in the room. I think there's one element which is community. Everyone who comes feels like they've met someone that they can work with, learn from. It's also application only. So there's a bit of an exclusivity feeling of like, oh, I got to be in that room in that moment.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1158s"
+    },
+    {
+      "start_sec": 1178,
+      "end_sec": 1194,
+      "text": "And of course there's like tangible takeaways of what they learn on stage so they feel like they're ahead. >> Yeah, I think we have always felt this more internally. But like the value proposition of these events is like don't get left behind. >> Oh.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1178s"
+    },
+    {
+      "start_sec": 1194,
+      "end_sec": 1213,
+      "text": ">> Like we are pushing the narrative of what's happening in the future. >> Yeah. >> Right? We're informing you tangibly how do you engage with the future of this industry. >> Yeah. >> Um so there's a bit of like internally I have that thought in my head. >> Yeah. So it's like it's always like as a creator don't you feel like it's a constant treadmill? Actually lonely often times you're working on your own.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1194s"
+    },
+    {
+      "start_sec": 1213,
+      "end_sec": 1241,
+      "text": "You're on this treadmill where you have to keep up with all the new content coming down the pipeline. We exist so that we can help you get ahead of it. And we've got this amazing new thing. Have you noticed that all these companies are starting to get bought up? All these YouTube channels are getting getting bought up by these big conglomerate media companies? We're actually getting ahead of it. You don't want to be left behind in this situation. Come to our event. We're actually having both parties here. You can benefit from it. Blah blah blah blah blah. Something like that. Value for the person.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1213s"
+    },
+    {
+      "start_sec": 1241,
+      "end_sec": 1259,
+      "text": "What's the most gossipy part of this experience? Like By the way, the gossipy thing is like right as room. Like the the sworn agreement is that anything goes. You kind of need to let your brain go to the absolute edges of what's possible. >> Yes. >> Mhm. >> That was actually one of the first things that when we went to North Carolina and spent time with Mr. Beast 6 years ago, he said that exact thing.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1241s"
+    },
+    {
+      "start_sec": 1259,
+      "end_sec": 1276,
+      "text": ">> Yeah. >> He said we you got to let your brain go to the furthest extreme and then pull it back. >> Yes. Find what's on brand and hot, brand. >> But to give you the most gossipy thing, I mean I think the fact that this application only has a gossipy element to it because there's people who get in and don't get in.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1259s"
+    },
+    {
+      "start_sec": 1276,
+      "end_sec": 1292,
+      "text": "I don't know how to define gossipy beyond this like high school feeling of it. >> What about like if you're with a friend alone right now describing the event and you like there's no cameras rolling? What would you say to them? To get them most hyped about this event?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1276s"
+    },
+    {
+      "start_sec": 1292,
+      "end_sec": 1314,
+      "text": "Like this is the thing that you would say to them to get them most hyped about this event. >> [snorts] >> Yeah, who's in the room? >> I would tell them about who's in the room. >> Yeah. >> Yeah. >> Who's in the room? >> There's like very cool executives from a lot of at least for me growing up in LA a lot of my like dream studios like A24 and Lionsgate and Sony and Fox. So there's like decision makers all these places.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1292s"
+    },
+    {
+      "start_sec": 1314,
+      "end_sec": 1332,
+      "text": "There's also like the core team of YouTube, Google, Adobe, like real decision makers. People have come to our events before and walked out with their biggest deal ever. So I would say the pitch to creators is like the decision the decision makers are in the room.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1314s"
+    },
+    {
+      "start_sec": 1332,
+      "end_sec": 1351,
+      "text": ">> There's also like and this number is probably already changed but more than 40 creators with over a million subscribers on YouTube. >> And the collective >> Right. >> YouTube reach is right now 568 million. >> Collective YouTube reach, collective streaming, Rachel whatever like collective financial value.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1332s"
+    },
+    {
+      "start_sec": 1351,
+      "end_sec": 1375,
+      "text": ">> Right. >> From these big companies. So it's like for the first time in history these three things are coming together and it's everyone from like the biggest creators in the world, the most highest senior executives at the the largest media companies. That's the the gossipy part that comes. And ideally you can name drop a couple of people but >> Yeah. That's cool.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1351s"
+    },
+    {
+      "start_sec": 1375,
+      "end_sec": 1390,
+      "text": ">> Whenever I'm writing a story I literally do that three-step process because it's very hard to sit down and do all of that at once in your brain. Whereas if you sit down and you say I what do I just need to what am I trying to say? You write that out. Okay, what's the value for them? You write that out. And you say, okay, what's the most gossipy thing about this? And you write that out.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1375s"
+    },
+    {
+      "start_sec": 1390,
+      "end_sec": 1423,
+      "text": ">> Do you mean something like >> When you say gossipy, is it like the easiest to talk about or like the most not salacious, but the most kind of like >> It is >> evocative? Like what is >> It's the most evocative. >> Yeah, it's the most evocative. And that can be as simple as a scientific It doesn't need to be off-brand. I think a lot of people think gossipy and salacious and they think, oh, you know, I don't want to say that or whatever, but sometimes like for example, I have a I have an example in here that 90% of visible skin aging is from UV.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1390s"
+    },
+    {
+      "start_sec": 1423,
+      "end_sec": 1451,
+      "text": "Like that that's gossipy when you're talking about when you're trying to sell UV. Or you know, when you're trying to say, hey, I don't want you to go in the sun. If you say, 90% of your skin aging is from UV, that's the most gossipy part of that story. >> Yeah, there's an there's an element of Seth Godin's like remarkable, being remarkable, being worth making a remark about. Or easy to repeat. That's something that we definitely try, but it's a good it's a good note.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1423s"
+    },
+    {
+      "start_sec": 1451,
+      "end_sec": 1469,
+      "text": ">> Yeah, and I really find you have to be okay with being in a writer's room where it's just like let it all out and it's going to feel uncomfortable. And I've had we've done this with our employees and the the way we say it is like, hey, if you have the thought like, maybe I shouldn't say this, that's probably you're probably onto something. Like that's [laughter] the kind of internal compass.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1451s"
+    },
+    {
+      "start_sec": 1469,
+      "end_sec": 1490,
+      "text": "Okay, should we keep going? >> Yeah, let's go. >> So we we already kind of covered this, but this is the know your ticket price. So here's a couple examples. I started with YouTube cuz I know you guys know that. >> Okay, I'm looking at four thumbnails right now.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1469s"
+    },
+    {
+      "start_sec": 1490,
+      "end_sec": 1511,
+      "text": ">> So the ticket price here is title thumbnail. It's pretty obvious probably for your audience. What's the next one? >> New York Times. >> Journalists aren't educated on exactly how they should be thinking about writing their articles to get the most of their articles. And so if I'm a journalist, that's my ticket price. And so it really this is this is a different content creators, different ticket prices. What's the next one?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1490s"
+    },
+    {
+      "start_sec": 1511,
+      "end_sec": 1527,
+      "text": ">> Email. >> Email. So subject line. >> Yep, subject line. And that's an actual screenshot of my inbox and I'm trying to say to the blueprint team like look at us in comparison to whom you're competing with, like you're in a sea of other emails, how are we going to stand out?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1511s"
+    },
+    {
+      "start_sec": 1527,
+      "end_sec": 1543,
+      "text": "App notification screen. We went through already, but this idea of like you're competing in a sea of notifications, how the first three words in that need to be non-salesy of create enough intrigue that someone wants to open up the notification.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1527s"
+    },
+    {
+      "start_sec": 1543,
+      "end_sec": 1561,
+      "text": ">> So this one is from blueprint. It says when you come home today, leave your shoes at the door. The first four steps into your house tracks 85% of the outside world's, I'm guessing germs. >> Contaminants, yeah. >> So that's true. I should be taking my shoes off immediately. >> Yes, that's a very easy hack for longevity.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1543s"
+    },
+    {
+      "start_sec": 1561,
+      "end_sec": 1578,
+      "text": "Like doesn't take any of your time, take your shoes off. Yeah, like lead. >> I think it's so interesting that basically the the the two things that you're suggesting here is one something that we say of like we've written down these principles of what it means to be a creator in today's world.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1561s"
+    },
+    {
+      "start_sec": 1578,
+      "end_sec": 1595,
+      "text": "Number one is being contextually aware. And this is what you're saying. >> Yes. You got to know what's around you. >> Yes. >> To stand out. >> Yes. >> If you're if you're creating by yourself without context, you're not going to stand out. >> Yes. >> And number two is writing is everything. >> Yes. >> Like this is all an exercise of writing. >> Yes. >> Everything that you've shown us is >> It's really all copywriting.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1578s"
+    },
+    {
+      "start_sec": 1595,
+      "end_sec": 1616,
+      "text": ">> It's all copywriting. And there's different rules of the road for each of these platforms. >> Yeah, that's a good way of thinking about it. And I absolutely hate writing and so it just goes to show how much like anybody can do this at home. >> Yeah. >> Yeah. >> All right, let's see what's next. Number five. >> So this is ruthlessly create value.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1595s"
+    },
+    {
+      "start_sec": 1616,
+      "end_sec": 1636,
+      "text": "This is one of the core principles. And so I'm going to give you two examples here. Two separate examples. >> Okay, so this one says what you said before. 90% of visible skin aging is caused by everyday sun. >> Whenever we're doing something like this, you you need to create value. We just incited fear in someone potentially.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1616s"
+    },
+    {
+      "start_sec": 1636,
+      "end_sec": 1658,
+      "text": ">> Yeah, you created tension. >> Yes, how do you soothe them so that they are left with a sensation that you are on their team and that you're creating more value than you're taking from them. And so that that juicy gossipy headline, you don't want that to take away from the audience's experience with you. And so immediately after that we're giving them a protocol on what they can do to mitigate that risk.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1636s"
+    },
+    {
+      "start_sec": 1658,
+      "end_sec": 1676,
+      "text": ">> The next thing that we see here is follow these rules to protect your skin. >> Right. >> And there's three rules. >> Yeah, so that's an Instagram carousel. So again, this is another platform, right? It's not video. And by the way, all these examples are mostly text because I'm had to show them to you, but we take the same principles into our paid advertisements, reels, etc.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1658s"
+    },
+    {
+      "start_sec": 1676,
+      "end_sec": 1707,
+      "text": ">> [clears throat] >> And then the second example is I believe a tweet. And I wanted to show what it's like when you're telling someone something as opposed to creating value for them. >> Okay, so the first one that we have here is a 2020 nationwide study in Korea following 161,286 subjects for a median of 10.5 years found that frequent tooth brushing three or more times a day significantly reduced the risk of How do you say this? Atrial?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1676s"
+    },
+    {
+      "start_sec": 1707,
+      "end_sec": 1725,
+      "text": ">> Atrial. >> Fib >> Fib >> Fib >> Fib >> Fibulation. >> [laughter] >> Atrial fibrillation. And heart failure by an average of 10% and 12% respectively. So that is telling me something. >> Mhm. >> And and even the fact like stumbling over the words just goes to show like you just created a huge distance between you and your audience.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1707s"
+    },
+    {
+      "start_sec": 1725,
+      "end_sec": 1749,
+      "text": ">> Friction. I barely even understood that. Um okay. Now this is a tweet from Bryan Johnson. Brush your teeth immediately when you wake up. Overnight your mouth fills with acid-producing bacteria due to lower salivary flow. When you eat or drink carbs or sugars without brushing first, you feed this bacteria, which immediately produces acids. Acidity increases beyond the tolerance threshold and immediately starts damaging your enamel.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1725s"
+    },
+    {
+      "start_sec": 1749,
+      "end_sec": 1777,
+      "text": ">> So, that first sentence is like, you guys brush your teeth. >> Yeah, just basically say the thing. Yeah, say the thing. >> Say the thing. >> This reminds me a lot of working with um technology companies on marketing. Meaning like a phone company. And the difference between Apple and other phone companies, which often over-index on like the chip that's inside, right? The Snapdragon chip. I'm all good on that. I don't need to know that, like the Apple ads are typically like call your mom.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1749s"
+    },
+    {
+      "start_sec": 1777,
+      "end_sec": 1793,
+      "text": ">> Mhm. >> [clears throat] >> Right? Or like showing you So, showing someone FaceTiming a friend and laughing. And it's like >> even shot on iPhone. >> Yeah, showing incredible shots. >> Mhm. >> Here's a photo. Couldn't even tell you if it's that much better than a photo shot on another phone. >> Yeah. Mhm.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1777s"
+    },
+    {
+      "start_sec": 1793,
+      "end_sec": 1822,
+      "text": ">> Hey man, it's shot on iPhone. >> Just simplicity and like we we don't have I think we all can sit in a room and get to like a nuanced creative message. Um but that rarely wins. It's always like the most simple human. Just say it. >> Yeah. >> Say it in human words, like >> Yeah. And and I find that I've like developed like this intuitive sense of when I feel like it's becoming so complicated that I'm almost struggling to remember it in my head. That's a sign for me to like, we got to strip it back 10 degrees here and get to the core of what we're trying to say.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1793s"
+    },
+    {
+      "start_sec": 1822,
+      "end_sec": 1838,
+      "text": "Okay, next. >> Yep. >> Um, so this is a fun one. This is two tweets exactly one year apart. >> [cough and clears throat] >> Okay, it's a tweet from Bryan Johnson.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1822s"
+    },
+    {
+      "start_sec": 1838,
+      "end_sec": 1860,
+      "text": "The first one says, \"Sleep is the most powerful drug available for performance, mental health, and well-being.\" That's 2025 and it has 220,000 views. The next one from 2026 says, \"Sleep is the most powerful drug available for performance, mental health, and well-being.\" It has 348,000 views from a year later. That's incredible.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1838s"
+    },
+    {
+      "start_sec": 1860,
+      "end_sec": 1881,
+      "text": ">> That's amazing. >> You can say the same thing. People have this misconception, I need to come with something novel every single time. >> really good. I thought it was going to be slightly different. >> That's so good, Kate. >> Yeah. >> You know who um Scott Galloway kind of told that to us as well. He said like when you write something good, like just hammer it. Like just say it constantly.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1860s"
+    },
+    {
+      "start_sec": 1881,
+      "end_sec": 1897,
+      "text": "Like if you have a good thing >> Yeah. >> tell you how many tweets we've written about sleep. Just like you know, you you think that our audience would get sick of hearing about sleep. I think we've written like I don't know, 200 pieces of >> space it out or no? >> No. >> You're just like if it's good, just do it again. >> Yeah. >> All good. >> Yeah. Yeah.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1881s"
+    },
+    {
+      "start_sec": 1897,
+      "end_sec": 1915,
+      "text": ">> I I can't wait to hit Twitter. >> Yeah, I know. I I I also I'm feeling very inspired to write. >> Mhm. >> Now, it's uh it's really helpful. Yeah, I think we we come you know, I went to film school. I got into this to be like a a filmmaker and creative and I think I get to the point where I'm like Colin and I, the amount of times where we're like, \"Well, we already did that.\" >> Yeah.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1897s"
+    },
+    {
+      "start_sec": 1915,
+      "end_sec": 1948,
+      "text": ">> I mean, I think that's actually one of our biggest faults. >> of probably one of our biggest faults is that we want to reinvent the wheel constantly. >> I was looking this is like I was looking at your content and I was thinking about like my title thumbnail if you guys do publish this on your YouTube. And it was the chicken shop date one it was like she built this and so I thought like she built probably has an inherent tension behind it and I was like that's probably you could just reuse it, you know. So >> It'd be fun to workshop >> copywriting.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1915s"
+    },
+    {
+      "start_sec": 1948,
+      "end_sec": 1963,
+      "text": ">> Yeah, yeah, that's good. I like that. >> This is actually similar. It's an iteration. It's what you expected. It is the very slight adjustments on writing when you hit something, just do it again. So, I did two examples here, one from Twitter and one from Instagram carousel.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1948s"
+    },
+    {
+      "start_sec": 1963,
+      "end_sec": 1979,
+      "text": "So, this is two four pieces of content two separate iterations. >> So, the first one, it says you need to be longevity maxing. And it has like this is on Twitter, I assume. >> Uh this is actually on Instagram.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1963s"
+    },
+    {
+      "start_sec": 1979,
+      "end_sec": 1994,
+      "text": ">> This is Instagram. And this was published through Brian's account? >> Through Blueprint's account. >> Through Blueprint's account. Okay. So, this has like all the different elements of what it means to engage in longevity. It has Blueprint, it has a tweet from Brian, it has a goth girlfriend. That's funny.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1979s"
+    },
+    {
+      "start_sec": 1994,
+      "end_sec": 2031,
+      "text": ">> Yeah. >> a standing desk. So, the the next one that you have here is a very similar image, but it says it's time to start sleep maxing. >> There was signal in that first one that this was a higher performer than other posts for the Blueprint account that's just starting out. And so, it's take that existing thing and then just do a slight tweak. You actually really don't want to like tweak too much. You just want to take the same thing and then you can start actually what is it about that's actually working? Is it the fact that it's about longevity or is it the actual format itself? And then once you find signal on the format itself works, then you can just crank out 20 of those at once. And so,",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=1994s"
+    },
+    {
+      "start_sec": 2031,
+      "end_sec": 2061,
+      "text": "um we're always so tempted as creatives to want to do really new things. >> Yeah. >> But we have to restrain ourselves to just take what works, tweak it, publish, see if that works again. >> Mhm. And so, the next two are basically what it looks like the early iterations of that exact same tweet that you showed us. Sleep is the world's best willpower drug. Willpower enables you to do what you want to become. Next tweet. Sleep is the most powerful performance-enhancing drug in existence. Get your dose tonight.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2031s"
+    },
+    {
+      "start_sec": 2061,
+      "end_sec": 2077,
+      "text": ">> Yeah. So, the concept is sleep is a drug and then two different expressions of that. >> You've got it. >> Yeah. I mean, this one should not be a surprise to you guys. One example, again, Brian's genius on Twitter.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2061s"
+    },
+    {
+      "start_sec": 2077,
+      "end_sec": 2097,
+      "text": ">> [clears throat] >> And this is number eight, speak simply. Okay, the first one here is from something titled Preventive Medicine Reports in December 2023. It reads, \"Protective effects of dog ownership against the onset of disabling dementia in older community dwelling Japanese.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2077s"
+    },
+    {
+      "start_sec": 2097,
+      "end_sec": 2114,
+      "text": "A longitudinal study.\" >> [snorts] >> And then Brian Johnson's tweet reads, \"You a cat or dog person? Own a dog and exercise, 63% lower dementia risk. Own a dog and don't exercise, 0% benefit. Own a cat, 0% [laughter] benefit.\" >> I didn't even understand that these were saying similar things.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2097s"
+    },
+    {
+      "start_sec": 2114,
+      "end_sec": 2134,
+      "text": ">> thing. >> I When Colin read them both, I was like, these are two completely separate thoughts, but they are not. >> No, they're That tweet is from that science, that scientific study. And so there's like so much of what we do is we take a study and then we make it understandable. >> Mhm. >> And we not only do we make it understandable, we make it dead simple.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2114s"
+    },
+    {
+      "start_sec": 2134,
+      "end_sec": 2153,
+      "text": ">> Yeah. This again is back to that phone thing that I think you see this a lot in phone advertising where again, like I this the Snapdragon chip, I don't care about. >> Mhm. >> Tell me what it does for me that's like radically human. >> Mhm. >> You know, and this, \"You a cat person or dog person?\" is that's the most radically human.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2134s"
+    },
+    {
+      "start_sec": 2153,
+      "end_sec": 2188,
+      "text": ">> Yeah, own a dog, less dementia. >> Right. >> Yeah. >> Okay, next. Um so this is really similar to the one we went through last time, which is you want to see it in context. So, two different stories in here. The first one is me sitting down in a Google document and writing this. And writing it like that, you miss all the cues of how someone's going to receive it. So, I'm I'm drafting a text here. In order for me to write it, I actually need to see it in the format to understand what is the best way of viewing this. And so",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2153s"
+    },
+    {
+      "start_sec": 2188,
+      "end_sec": 2208,
+      "text": "same thing for Twitter. A lot of the times it's literally the spacing of the text wrapping that makes the biggest difference. Is this legible or is that one hanging word make it very hard to understand what's being said? And so, that's just an example of of copywriting. And then I also want to include this example from Blueprint of, you know, we're redesigning a packaging.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2188s"
+    },
+    {
+      "start_sec": 2208,
+      "end_sec": 2234,
+      "text": "And someone sends me, \"Hey, here's our new packaging. Do you like it or not? Is it approved or not?\" And then I'm like, \"No, I need to see it in context. How does it look on the website next to our other branding? How does it look on a meta advertisement in someone's hand on their phone? Is it legible? Can you see that this is an edible product? How is it on Amazon? How is it in store? How is it when it arrives in a package at home?\" And now with AI tools, it's so easy. I drafted both all those images in like, you know, a minute.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2208s"
+    },
+    {
+      "start_sec": 2234,
+      "end_sec": 2267,
+      "text": "Um, and it's like because so much of it is like, \"Can does the story come through if it's on a shelf? How does it sit [clears throat] amongst the sea of other products that it would be surrounded by?\" >> And when you saw it on a shelf and in these scenarios in context, what made you think, \"Okay, yes, this looks right.\" >> So, I'm thinking I'm looking So, it really depends on what your indexing for. Is it a one SKU product where AG1, for example, they have that big headline.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2234s"
+    },
+    {
+      "start_sec": 2267,
+      "end_sec": 2290,
+      "text": "Um, or is it something where you need to draw together one brand under one cohesive storytelling. And then in which case you want to have like a really strong design point of view and it's less important that people can understand what the product itself is. Is it going into retail? So, it's all about knowing your ticket price. Like, what is it the thing that you're trying to have people be the story they walk away with.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2267s"
+    },
+    {
+      "start_sec": 2290,
+      "end_sec": 2311,
+      "text": ">> It makes me think a lot about short-form content right now and how the assumption is you make one short-form asset and it can go across every platform as is. >> Right. >> Or even like the context of like a cutdown >> Right. >> of something. Like it's it's actually it's its own asset in in its own context. We can't assume like this long-form video, but vertical is just fine over here.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2290s"
+    },
+    {
+      "start_sec": 2311,
+      "end_sec": 2338,
+      "text": ">> Right. >> It's not. >> Right. >> Right. Or like this short-form video that was on Tik Tok will be fine over here on Instagram. >> Mhm. >> It's in a completely different nightclub, as you said. Like there's a totally different entry price there. >> Yeah. >> I think that to me is as I look at this and I'm reminded of um again, spending time with Mr. Beast walking up and down the aisles of Walmarts with him when he was launching Feastables and testing new packaging. He would bring it with him.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2311s"
+    },
+    {
+      "start_sec": 2338,
+      "end_sec": 2367,
+      "text": "And just put it on the shelf and stare at it and walk by it and be like, is that noticeable or not? >> Yeah. >> And uh I think it's such an important thing of of contextual awareness. >> Yeah. Yeah. Okay. Publish immediately. I don't know how you guys feel about this or if this is connected to press publish, but I I always tell like people I hate marketing calendars. I hate content calendars. I hate planning in advance. Like because the whole point of all this is to publish, see how it performs, iterate.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2338s"
+    },
+    {
+      "start_sec": 2367,
+      "end_sec": 2401,
+      "text": "And so if you're holding content, you don't get the juice, which is the the biggest value get from publishing, is did it perform, did it not perform, how can that inform my next piece of content over and over again. The more you skip and you've already got five pieces of content ready to go, those four pieces of content that you publish on the next one miss the learnings of that piece of content. And so that and also I feel like energetically, the more you're exposed to your own content, the the the energy wears off for you and you forget what the if it's even novel or interesting to the person watching.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2367s"
+    },
+    {
+      "start_sec": 2401,
+      "end_sec": 2421,
+      "text": ">> So, I agree with you. The thing we've been talking about a lot is like the distance between recording and publish is extremely important cuz you lose a lot of energy in that thing. >> Yes. >> But that distance is filled by post-production in a lot of contexts. >> Mhm. >> How are you guys thinking about the heaviness of post-production in a lot of this stuff.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2401s"
+    },
+    {
+      "start_sec": 2421,
+      "end_sec": 2457,
+      "text": ">> This also gets back to the I don't have it in here as an example, but the the benefit of scrappiness. Like the whole thing about the polished product imagery versus the UGC version makes me also just want to take a much scrappier post-production process and really like bring it back to our core of like how can we just quickly get this out and not put too much effort into post-production? Um of course that's that comes with its own downside, so I wouldn't like our YouTube team is amazing. They work really really hard and one of their absolute banger skill sets is humor.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2421s"
+    },
+    {
+      "start_sec": 2457,
+      "end_sec": 2486,
+      "text": "And I feel like humor does require a lot of thoughtfulness, a lot of post-production, a lot of you know comedic timing and so they're they're fantastic at that. >> Yeah, I think we we've been having this conversation quite a bit of like I mean what you've done today is also respecting that that like you're going to you brought visuals. You know, but of course like for our audience follow along we're going to now layer on B-roll, we're going to make this this is now a >> I literally was just thinking as you were starting to hand these to us I was like okay, we're going to need you to send us >> I've got my list prepared. I've got my list as I was [clears throat] putting together I was like >> Amazing.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2457s"
+    },
+    {
+      "start_sec": 2486,
+      "end_sec": 2510,
+      "text": ">> I was like I'm not going to have you guys ask. >> Sure, of course. I think we've been trying to do the exercise. We actually did this thought exercise. What if there was no post-production? What does that look like? What if we were live right now? >> Right. >> Right. When this was done we or other people could already clip some of these moments that they liked and put them out cuz that's what we're going to try and work >> towards anyway. Yes. But the amount of time it's going to take to get there is going to be enormous.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2486s"
+    },
+    {
+      "start_sec": 2510,
+      "end_sec": 2530,
+      "text": ">> Like by the time you get home if this was already out and out in the world and people had enjoy like that to me feels like where we're moving as a as a creator economy because I think you know, there's this great tweet from Eric Tornberg. He said content today either needs to be timely or timeless.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2510s"
+    },
+    {
+      "start_sec": 2530,
+      "end_sec": 2545,
+      "text": ">> Mhm. Mhm. >> There's no one between. And I think it's a really good note of >> That's true. >> the middle ground, which is kind of where most YouTube lives. Isn't that middle ground of like this isn't immediately timely, and it's also not timeless, but I'm going to spend 2 weeks making.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2530s"
+    },
+    {
+      "start_sec": 2545,
+      "end_sec": 2575,
+      "text": ">> Oh, man, that's so brutal. >> Right? It's this murky middle ground where I think we're recognizing like that era may be winding down. Then you look at the people who make short-form content straight from their phone, they're moving at a much quicker pace. So, I agree with this one. I don't know how to get there yet, but I agree with it. But I also find that writing you know, tweets, that's a great way to get there cuz you're like I can I can publish this immediately.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2545s"
+    },
+    {
+      "start_sec": 2575,
+      "end_sec": 2607,
+      "text": ">> So, um this I wish I had this skill set, but I don't. But you know who does? Mr. Bryan Johnson. This is such a valuable skill, and it is such an unlock for how to think about content. So, this is to approach everything that comes your way as yes, and no matter what it is. If you have the instinct to say no, but to correct someone, to do something different, put it to the side for a second and say, \"Well, what if I was to say yes, and to this?\" So, this is some examples. Read the first tweet, and then have the yes, and experience.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2575s"
+    },
+    {
+      "start_sec": 2607,
+      "end_sec": 2631,
+      "text": ">> My urine is now blue. Started methylene blue today. >> Which is a type of therapy. >> Okay. And then, am I meant to read Neil Stone's? Okay, then another tweet under it from Neil Stone, \"Methylene blue is a synthetic petroleum based dye. Why take that?\" Brian Johnson, was really moved by the Smurfs movie.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2607s"
+    },
+    {
+      "start_sec": 2631,
+      "end_sec": 2657,
+      "text": ">> So, essentially like a hater responding. And instead of Brian being like, \"Well, I'm going to take it because it has these benefits of blah blah blah like trying to It's like, \"Well, what if we agree with this person?\" >> Mhm. >> Where does that leave us? >> Mhm. That's interesting. Okay, the next one. We need an anti-Brian Johnson. Someone who sleeps 4 hours, lives on fast food, drinks heavily, smokes, never exercises, yet somehow achieves perfect biomarkers through a cocktail of drugs would be way more interesting. Brian, I'm pivoting.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2631s"
+    },
+    {
+      "start_sec": 2657,
+      "end_sec": 2684,
+      "text": ">> [laughter] >> Do you guys know Liver King? >> Yeah, of course. This is really funny. I forgot that Liver King was also named Brian Johnson. >> And they're the same age. >> That's crazy. Okay, so you have a fork in the road with Brian Johnson and then Brian Johnson Liver King on the other side. And uh there's a kid there and the meme says, \"Which way, modern man?\" And Brian Johnson says, \"Honestly, Brian Liver King has painted a more compelling vision.\" Or a compelling vision. Yeah.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2657s"
+    },
+    {
+      "start_sec": 2684,
+      "end_sec": 2705,
+      "text": "Got it. So it's also like the playfulness. >> Mhm. >> It's the playfulness of the internet where it's like >> It's part of the humor of it, too, I think. >> Yeah, it's >> Being too self-serious. >> Mhm. >> I I think this goes in with the um the polished stuff you showed us from the beginning. Where I think actually polished content looks very self-serious.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2684s"
+    },
+    {
+      "start_sec": 2705,
+      "end_sec": 2721,
+      "text": ">> Mhm. >> And the equivalent of like being not self-serious in response is is also showing the like messy table with the pills on it, meaning with the supplements on it. That's like a playful, not so self-serious thing. Um yeah, that's cool. That's interesting.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2705s"
+    },
+    {
+      "start_sec": 2721,
+      "end_sec": 2752,
+      "text": ">> The other thing, and this is kind of like it's hard to kind of explain, but the other thing that it does is it captures energy, negative and positive, and it turns it into your energy. So when things go viral online, they just like an amount amount enormous amount of energy can happen. That can be positive energy, it can be entirely negative, or it can be a combination of both. Usually it's a combination of both, right? Viral content typically elicits both positive and negative. If you say yes and all of that energy, it all of a sudden becomes yours. Does that make sense?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2721s"
+    },
+    {
+      "start_sec": 2752,
+      "end_sec": 2770,
+      "text": ">> Mhm. >> People enjoy the fact that Brian showed up with the yes and energy and it becomes like we're almost a bit one big family and we yeah, we agree, we disagree, but like it's funny. And we're just play we're playing, we're having fun. And so, you really get to It's a real skill set in converting people to your team.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2752s"
+    },
+    {
+      "start_sec": 2770,
+      "end_sec": 2786,
+      "text": ">> I like that. Four months ago, we saw a video, you know, you've been relatively behind the scenes, but you know, this this video and tweet came out from Brian about having a girlfriend. There's a YouTube thumbnail that says, \"Guys, I have a girlfriend.\" Brian is smiling, hugging you. >> Yeah.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2770s"
+    },
+    {
+      "start_sec": 2786,
+      "end_sec": 2801,
+      "text": ">> How much did you guys workshop this >> [laughter] >> as a marketing moment versus Like how how did I think a lot of people would be curious about this? Like the behind the scenes of rolling out the fact that you guys are dating has been a very public thing if you're on Twitter.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2786s"
+    },
+    {
+      "start_sec": 2801,
+      "end_sec": 2836,
+      "text": "And it's been a very loud conversation. >> Yes. >> Um so, I'm just curious about that. >> No, that was all Brian. Like he um he's been wanting to say positive things about me online for a long time. And this and he was wanting to announce the relationship. And so, he spent like 2 months just writing in his head. He does a thing where he writes it in his head and then he just sits down and does it all in one go. So, it doesn't become this like iterative process on page, which is quite hard to write. And so, he was like iterating in his mind for 2 months and then wrote it all that big long post in one go. And that was just",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2801s"
+    },
+    {
+      "start_sec": 2836,
+      "end_sec": 2872,
+      "text": "like an authentic spewing. I think the iterative process in his mind is he really does treat his audience as family and he wants them to have a good time. And so, I think part of it is also like what would the people enjoy reading and understanding? Like we A lot of folks think that like Brian is self selfish cuz he's spending all his money. But you don't go viral like that unless you really deeply care about people in the community having some value from what you're saying. And so, yeah, that's just like a completely organic process. The video um our one of our editors put together of",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2836s"
+    },
+    {
+      "start_sec": 2872,
+      "end_sec": 2888,
+      "text": "his own accord without any input from Brian and myself. >> Got it. >> Just totally absorbed observed us in the moment and then put this really loving thoughtful piece together just as a pure storytelling person. >> And what has that been like to be a more public part of this now?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2872s"
+    },
+    {
+      "start_sec": 2888,
+      "end_sec": 2910,
+      "text": ">> Oh, great. I mean, um I'm very much a shy person by nature and so I'm learning how to take up more space and step into the spotlight and all that kind of stuff and it's definitely a stretch for me and something I'm having to kind of overcome my internal desire to kind of shy away. Um but what I love about it is the playfulness and freedom that Brian gets to play online.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2888s"
+    },
+    {
+      "start_sec": 2910,
+      "end_sec": 2941,
+      "text": "So, like I don't know if you guys saw he tweeted about about us having sex. >> I did see that. >> Yeah, like everyone saw that. Now I'm getting congratulated in public. Like people like, \"Congrats on the sex.\" >> [laughter] >> Um and a lot of fit folks like, \"How do you feel about that?\" I'm like, \"I love it. Like how fun, you know? We just get to say what we want and it's true. We did just have sex and it was silly and it was like in the moment he was kind of like, \"Should I post this?\" And I was like, \"Sure. Great. Do it. It's fun.\" >> Yeah, it's uh it's very contrarian to how we've operated as human beings for a long time.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2910s"
+    },
+    {
+      "start_sec": 2941,
+      "end_sec": 2972,
+      "text": "Uh and it definitely creates a visceral reaction, positive and negative, as you said. Um yeah, it's interesting. >> And a lot of the content we do comes from I think both Brian and I pretty neurodivergent and I know growing up like I wanted to know a lot more and there were so many taboo topics. Let's take erectile dysfunction for example. ED um predates uh cardiac event by 3 to 5 years because the blood vessels in the penis are small, similar to the heart.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2941s"
+    },
+    {
+      "start_sec": 2972,
+      "end_sec": 3003,
+      "text": "And so, it'll show up in the penis first before it affects your heart. Now, this is really important thing for men to know if they're experiencing ED. And this is just something we don't talk about. >> Right. >> Same thing with um sexual arousal. Like I didn't know that the cervix retreats prior to have prior to sex, which makes it a more pleasurable experience for a woman and it's actually really important to know that so that you can like look after your own needs and also communicate to your partner so they look after your needs. And so there's just all these things that people don't want to touch that for us it's like this is biology. Why can't we talk about it?",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=2972s"
+    },
+    {
+      "start_sec": 3003,
+      "end_sec": 3019,
+      "text": ">> Yeah. Thank you so much Kate and hopefully we converted Colin to a blueprint subscriber. >> I'm definitely >> we'll get you hooked up. That's all I can think. >> [laughter] >> I don't know. It's like I I also feel like now I need a a wide brimmed hat to go outside and three feet, right? >> Yes, that's like the one thing that yes, please.",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=3003s"
+    },
+    {
+      "start_sec": 3019,
+      "end_sec": 3025,
+      "text": ">> overwhelmed. >> I got my hat. Yeah. >> Thanks for having me on you guys. >> Yeah, thank you for coming. >> [music]",
+      "deep_link": "https://www.youtube.com/watch?v=Ak-YNIBqEjI&t=3019s"
+    }
+  ],
+  "metadata": {
+    "view_count": 144406,
+    "author": "Colin and Samir",
+    "channel_id": "UCamLstJyCa-t5gfZegxsFMw",
+    "notes": "Kate Tolo interview on building Blueprint and Don't Die growth"
+  }
+}

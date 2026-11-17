@@ -1,0 +1,39 @@
+{
+  "id": "yt:7yYcjQc4A2g",
+  "video_id": "7yYcjQc4A2g",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "before you take peptides, know this.",
+  "url": "https://www.youtube.com/watch?v=7yYcjQc4A2g",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-04-13",
+  "duration_sec": 67,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 18,
+      "text": "Come here. I think we need to have a pep talk, a peptide pep talk. The peptide industry is exploding and almost no one is using them correctly. I want to be clear, I am not anti-peptide. In fact, some peptides like the GLP-1s are among the most effective interventions in the world.",
+      "deep_link": "https://www.youtube.com/watch?v=7yYcjQc4A2g&t=0s"
+    },
+    {
+      "start_sec": 18,
+      "end_sec": 34,
+      "text": "The problem is twofold. First, most people keep an open loop. You take peptides, you feel something, you take more. The reality, you actually want it closed. You take the peptide, you measure the biomarker, and then you adjust accordingly. Without the biomarker feedback, doses can escalate based upon your feelings and not data.",
+      "deep_link": "https://www.youtube.com/watch?v=7yYcjQc4A2g&t=18s"
+    },
+    {
+      "start_sec": 34,
+      "end_sec": 68,
+      "text": "And that is how you get yourself in a situation where you're taking doses without clinical precedent. But really, that's only half the problem. People often reach for peptides before trying to fix sleep, nutrition, and exercise. Injections are attractive because they create this illusion of psychological control. The needle, it feels like power. You've got to be careful though, because the body is precise. The same peptide that works for you at the right dose can work against you at the wrong dose. And without biomarkers, you just don't know what side of the line you're on. Peptides are very promising, but if you're not measuring biomarkers, you're taking a shot in the dark.",
+      "deep_link": "https://www.youtube.com/watch?v=7yYcjQc4A2g&t=34s"
+    }
+  ],
+  "metadata": {
+    "view_count": 695538,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

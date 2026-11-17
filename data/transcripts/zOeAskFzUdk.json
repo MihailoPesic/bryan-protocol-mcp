@@ -1,0 +1,39 @@
+{
+  "id": "yt:zOeAskFzUdk",
+  "video_id": "zOeAskFzUdk",
+  "tier": 2,
+  "source_type": "official_short",
+  "title": "new peptide experiment, results coming soon",
+  "url": "https://www.youtube.com/watch?v=zOeAskFzUdk",
+  "channel": "Bryan Johnson",
+  "published_at": "2026-05-05",
+  "duration_sec": 68,
+  "description": "",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 0,
+      "end_sec": 15,
+      "text": "Peptides and I have a complicated relationship, but we are giving it another shot. I'm going to stack two peptides with opposite side effects to test whether the downsides cancel while the benefits stay. Here's the breakdown.",
+      "deep_link": "https://www.youtube.com/watch?v=zOeAskFzUdk&t=0s"
+    },
+    {
+      "start_sec": 15,
+      "end_sec": 52,
+      "text": "Peptide one, tirzepatide. The benefit, metabolic optimization. The downside, it raises my heart rate and can cause sleep disruption. Peptide two, CJC 1295 DAC. Holy who named that peptide? The benefit is it signals your body to produce more of its own growth hormone and IGF-1, which drives repair and recovery. The downside, it can blunt my blood glucose control and cause insulin resistance. Here's why this is interesting. Tirzepatide and CJC pull in opposite directions. Tirzepatide raises heart rate and improves blood sugar. CJC calms the nervous system but disrupts glucose. On paper, the side effects",
+      "deep_link": "https://www.youtube.com/watch?v=zOeAskFzUdk&t=15s"
+    },
+    {
+      "start_sec": 52,
+      "end_sec": 69,
+      "text": "cancel out while the benefits should stay. So, we're putting this to the test. I'm doing a four-week protocol with doses increasing each week. As you would expect, we will be measuring everything. Weekly blood tests, continuous glucose monitoring, sleep, and a ton of other markers. Stay tuned, the results are coming soon.",
+      "deep_link": "https://www.youtube.com/watch?v=zOeAskFzUdk&t=52s"
+    }
+  ],
+  "metadata": {
+    "view_count": 302149,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}
