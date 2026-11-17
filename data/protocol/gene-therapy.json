@@ -1,0 +1,17 @@
+{
+  "id": "protocol:gene-therapy",
+  "wp_id": 52,
+  "slug": "gene-therapy",
+  "title": "Gene Therapy",
+  "url": "https://protocol.bryanjohnson.com/#gene-therapy",
+  "published_at": "2026-01-21",
+  "updated_at": "2026-01-21",
+  "summary": "Gene Therapy Received my first gene therapy in October 2023, Follistatin (watch video).",
+  "markdown": "# Gene Therapy\n\n## **Gene Therapy**\n\nReceived my first gene therapy in October 2023, Follistatin ([watch video](https://www.youtube.com/watch?v=bax8to_s07Q)).",
+  "metadata": {
+    "wp_id": 52,
+    "slug": "gene-therapy",
+    "parent": 0,
+    "menu_order": 22
+  }
+}

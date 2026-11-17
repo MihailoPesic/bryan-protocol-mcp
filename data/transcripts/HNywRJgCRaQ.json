@@ -1,0 +1,33 @@
+{
+  "id": "yt:HNywRJgCRaQ",
+  "video_id": "HNywRJgCRaQ",
+  "tier": 2,
+  "source_type": "official_video",
+  "title": "A Blueprint workout / Oct 2021",
+  "url": "https://www.youtube.com/watch?v=HNywRJgCRaQ",
+  "channel": "Bryan Johnson",
+  "published_at": "2021-11-09",
+  "duration_sec": 78,
+  "description": "Two years and millions were spent developing Blueprint, an algorithm that takes better care of me than I can myself. Now, you can build your Autonomous Self as well: https://blueprint.bryanjohnson.co/\n\nA Blueprint workout (Mondays).\n\nArchitected by Jefferson Johnson. \n\nhttps://blueprint.bryanjohnson.co",
+  "caption_kind": "asr",
+  "segments": [
+    {
+      "start_sec": 9,
+      "end_sec": 49,
+      "text": "so [Music] ah",
+      "deep_link": "https://www.youtube.com/watch?v=HNywRJgCRaQ&t=9s"
+    },
+    {
+      "start_sec": 49,
+      "end_sec": 79,
+      "text": "[Music] ah [Music] [Music] you",
+      "deep_link": "https://www.youtube.com/watch?v=HNywRJgCRaQ&t=49s"
+    }
+  ],
+  "metadata": {
+    "view_count": 331321,
+    "author": "Bryan Johnson",
+    "channel_id": "UCnRVL1-HJnXWB_Xi2dAoTcg",
+    "notes": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "protocol:cerebrolysin",
+  "wp_id": 54,
+  "slug": "cerebrolysin",
+  "title": "Cerebrolysin",
+  "url": "https://protocol.bryanjohnson.com/#cerebrolysin",
+  "published_at": "2026-01-21",
+  "updated_at": "2026-01-21",
+  "summary": "Cerebrolysin Trialed daily 5 mL cerebrolysin injections intramuscularly for cognitive benefits for three months. No effect measured. This does not…",
+  "markdown": "# Cerebrolysin\n\n## **Cerebrolysin**\n\nTrialed daily 5 mL cerebrolysin injections intramuscularly for cognitive benefits for three months. No effect measured. This does not mean it didn’t help or hurt, we were just unable to identify a biomarker that could inform.",
+  "metadata": {
+    "wp_id": 54,
+    "slug": "cerebrolysin",
+    "parent": 0,
+    "menu_order": 23
+  }
+}

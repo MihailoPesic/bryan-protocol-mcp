@@ -1,0 +1,17 @@
+{
+  "id": "protocol:products-i-use",
+  "wp_id": 76,
+  "slug": "products-i-use",
+  "title": "Products I use",
+  "url": "https://protocol.bryanjohnson.com/#products-i-use",
+  "published_at": "2026-01-21",
+  "updated_at": "2026-07-23",
+  "summary": "Stuff you may want:",
+  "markdown": "# Products I use\n\nStuff you may want:\n\n- Blueprint stack\n- Blueprint hair care\n- Blueprint skin care\n- Blueprint blood biomarkers (please note: Biomarkers is not currently available outside of the United States.)\n- Dry sauna\n- Air purifier ([this is what I have](https://www.iqair.com/us/products/air-purifiers/healthpro-plus?Model=XE) which is probably overkill for residential)\n- Wearable: Apple, Oura, Whoop, Garmin, they’re all great.\n- Eight Sleep bed",
+  "metadata": {
+    "wp_id": 76,
+    "slug": "products-i-use",
+    "parent": 0,
+    "menu_order": 28
+  }
+}

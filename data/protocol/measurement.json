@@ -1,0 +1,17 @@
+{
+  "id": "protocol:measurement",
+  "wp_id": 44,
+  "slug": "measurement",
+  "title": "Measurement",
+  "url": "https://protocol.bryanjohnson.com/#measurement",
+  "published_at": "2026-01-21",
+  "updated_at": "2026-01-21",
+  "summary": "Measurement We are working on a Mobile App & Biomarker testing products to enable you to track your health, measure…",
+  "markdown": "# Measurement\n\n## **Measurement**\n\nWe are working on a Mobile App & Biomarker testing products to enable you to track your health, measure blood work, engage with others, share updates, and meetup in real life.\n\n**Routine Measurement **\n\n1. [Blood draw, every 3-6 months](https://blueprintbiomarkers.com)\n2. Full body MRI annually (if over 40 or a family history of high risk)\n3. Mole check, annually\n4. Dentist, every 6 months\n5. Eye doctor, annually\n6. Blood glucose CPM\n7. Breast self-examination, monthly (ideally a few days after your period ends)\n8. Testicular self-examination, monthly",
+  "metadata": {
+    "wp_id": 44,
+    "slug": "measurement",
+    "parent": 0,
+    "menu_order": 18
+  }
+}

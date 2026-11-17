@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "bryan-protocol": {
+      "command": "python3",
+      "args": [
+        "-m",
+        "bryan_protocol_mcp",
+        "serve"
+      ],
+      "env": {
+        "PYTHONPATH": "/ABSOLUTE/PATH/TO/bryan-protocol-mcp/src"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "protocol:clean-water",
+  "wp_id": 38,
+  "slug": "clean-water",
+  "title": "Clean water",
+  "url": "https://protocol.bryanjohnson.com/#clean-water",
+  "published_at": "2026-01-21",
+  "updated_at": "2026-01-21",
+  "summary": "Clean water I’m using an alkaline water filtration system ($1,300 cost). There are similar systems that cost $300. System components:…",
+  "markdown": "# Clean water\n\n## **Clean water**\n\nI’m using an alkaline water filtration system ($1,300 cost). There are similar systems that cost $300. System components:\n\n1. Carbon Filtration – removes all dirt (solid blocks are better because they can remove smaller particles and volatile organic compounds)\n\n2. Reverse Osmosis Membrane – dirty water is diverted for disposal, > 85% pure water at this point\n\n3. Mixed Bed Deionization – removes impurities that the RO membrane misses and polishes water to laboratory grade high purity (all chemicals and pharmaceuticals removed to parts per billion)\n\n4. Remineralization and Alkalization – water infused with coral calcium sand (> 70 naturally occurring trace minerals)\n\n5. Coconut Carbon Fiber – makes water taste as natural as possible\n\nIf you’re in the U.S. you can get my same water system from William @ +1 323.356.3142.\n\nI use [simplelab](https://gosimplelab.com/testing) to test the water.",
+  "metadata": {
+    "wp_id": 38,
+    "slug": "clean-water",
+    "parent": 0,
+    "menu_order": 15
+  }
+}

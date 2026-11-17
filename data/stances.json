@@ -1,0 +1,347 @@
+[
+  {
+    "id": "stance:sleep-priority",
+    "topic": "Sleep & Bedtime Schedule",
+    "category": "sleep",
+    "status": "active",
+    "summary": "Sleep is Bryan's #1 health priority ('you are a professional sleeper'). Consistent 8:30 pm bedtime, ~5:00 am natural wake without abrupt alarms.",
+    "dosage_or_rule": "In bed by 8:30 pm; screens off 60 min prior; red evening lighting; final meal >= 4 hours before bed; bedroom 65-70°F (18-21°C); Eight Sleep mattress; 10,000 lux light 3-4 min upon waking.",
+    "rationale": "Lowering resting heart rate (RHR) before bed is his single highest-leverage recommendation because sleep governs willpower, metabolism, immunity, and cognition.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Sleep Protocol", "url": "https://protocol.bryanjohnson.com/#sleep"},
+      {"title": "What is the one thing I can do to improve my health?", "url": "https://protocol.bryanjohnson.com/#what-is-the-one-thing-i-can-do-to-improve-my-health"},
+      {"title": "How To Achieve A 100% Sleep Score", "url": "https://blueprint.bryanjohnson.com/blogs/news/100-sleep-score"}
+    ]
+  },
+  {
+    "id": "stance:rapamycin",
+    "topic": "Rapamycin",
+    "category": "rx_prescriptions",
+    "status": "stopped",
+    "summary": "Bryan Johnson permanently stopped taking rapamycin on September 28, 2024 after nearly five years of experimentation.",
+    "dosage_or_rule": "Stopped completely (previously tested 5/6/10 mg weekly, 13 mg biweekly, and 6/13 mg alternating schedules).",
+    "rationale": "Side effects (intermittent skin/soft tissue infections, elevated lipids, glucose elevations, higher resting heart rate) plus a late-2024 preprint showing acceleration across 16 epigenetic clocks outweighed benefits.",
+    "changed_at": "2024-09-28",
+    "sources": [
+      {"title": "I stopped taking rapamycin", "url": "https://blueprint.bryanjohnson.com/blogs/news/i-stopped-taking-rapamycin"}
+    ]
+  },
+  {
+    "id": "stance:coffee-caffeine",
+    "topic": "Coffee & Caffeine",
+    "category": "nutrition_and_stimulants",
+    "status": "avoid",
+    "summary": "Bryan does not drink caffeinated coffee and will only occasionally drink decaf, though he notes coffee generally correlates with longevity for many people.",
+    "dosage_or_rule": "Personal rule: no caffeinated coffee; occasional decaf only. General Blueprint sleep rule: avoid caffeine 8-10 hours before bed.",
+    "rationale": "Personally finds caffeine destabilizes his mood, disrupts sleep (6-hour half-life; raises pre-bed RHR 2-5 bpm), stains teeth, and causes metabolic swings.",
+    "changed_at": "2026-10-21",
+    "sources": [
+      {"title": "Does Bryan Johnson Drink Coffee?", "url": "https://blueprint.bryanjohnson.com/blogs/news/does-bryan-johnson-drink-coffee"},
+      {"title": "Sleep Protocol", "url": "https://protocol.bryanjohnson.com/#sleep"}
+    ]
+  },
+  {
+    "id": "stance:cold-plunge",
+    "topic": "Cold Plunge / Ice Baths",
+    "category": "recovery_and_therapies",
+    "status": "avoid",
+    "summary": "Cold plunging is not part of Bryan's routine (he only tried it once with Steve Aoki).",
+    "dosage_or_rule": "Not in daily Blueprint routine.",
+    "rationale": "With 10% caloric restriction and Blueprint's diet/sleep/exercise stack, his resting body temperature already runs ~5°F lower (~93.4°F), which he describes as 'metabolically cold plunging 24/7'.",
+    "changed_at": "2024-11-29",
+    "sources": [
+      {"title": "People often ask if I cold plunge. The answer is that I don't and here's why", "url": "https://blueprint.bryanjohnson.com/blogs/news/do-i-cold-plunge-the-answer-is-no-here-s-why"}
+    ]
+  },
+  {
+    "id": "stance:alcohol-smoking-junk-food",
+    "topic": "Alcohol, Smoking, Vaping, Fast Food & Junk Food",
+    "category": "anti_protocol",
+    "status": "avoid",
+    "summary": "Strictly avoids fast food, fried/junk/highly processed foods, smoking, nicotine, vaping, and alcohol.",
+    "dosage_or_rule": "Zero tolerance ('None is easier than some'). Revoke decision-making authority from 'Evening You'.",
+    "rationale": "Alcohol raises pre-bed RHR by 5-10 bpm and degrades sleep; nicotine raises pre-bed RHR 5-15 bpm; addictive ultra-processed foods accelerate biological aging.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Master these 5 habits", "url": "https://protocol.bryanjohnson.com/#master-these-5-habits"},
+      {"title": "How to avoid bad habits", "url": "https://protocol.bryanjohnson.com/#how-to-avoid-bad-habits"},
+      {"title": "What is the one thing I can do to improve my health?", "url": "https://protocol.bryanjohnson.com/#what-is-the-one-thing-i-can-do-to-improve-my-health"}
+    ]
+  },
+  {
+    "id": "stance:meal-and-fluid-timing",
+    "topic": "Eating Window, Late Meals & Evening Hydration",
+    "category": "nutrition",
+    "status": "active",
+    "summary": "Eats within an ~6-hour early window (~5:35 am to final meal around noon) and stops drinking fluids at 4:00 pm.",
+    "dosage_or_rule": "~2,250 kcal/day (10% caloric restriction), ~18-hour overnight fast; final meal by noon (general rule: >= 4h before bed); stop fluids at 4:00 pm.",
+    "rationale": "Large evening meals raise pre-bed RHR by 5-15 bpm, elevate core temperature, and disrupt sleep; cutting fluids at 4 pm prevents nighttime bathroom awakenings.",
+    "changed_at": "2026-07-08",
+    "sources": [
+      {"title": "My daily routine", "url": "https://protocol.bryanjohnson.com/#my-daily-routine"},
+      {"title": "Sleep Protocol", "url": "https://protocol.bryanjohnson.com/#sleep"}
+    ]
+  },
+  {
+    "id": "stance:seed-oils-vs-evoo",
+    "topic": "Seed Oils vs Extra Virgin Olive Oil (EVOO)",
+    "category": "nutrition",
+    "status": "conditional",
+    "summary": "Prioritizes high-polyphenol Extra Virgin Olive Oil daily and rejects blanket demonization of cold-pressed seed oils, while avoiding fried/high-heat oils.",
+    "dosage_or_rule": "Uses ~3 Tbsp/day of high-polyphenol Blueprint EVOO; avoids fried/high-temperature heated oils rather than cold-pressed oils; advises letting biomarkers decide.",
+    "rationale": "Stated on Theo Von (#644, Mar 2026) that 'cold-pressed seed oils, the evidence says they're fine,' whereas high-heat/fried oils are damaging.",
+    "changed_at": "2026-03-05",
+    "sources": [
+      {"title": "Theo Von #644 (57:39)", "url": "https://www.youtube.com/watch?v=l8IHPKv7OCw&t=3459s"},
+      {"title": "Should You Take Olive Oil Shots?", "url": "https://blueprint.bryanjohnson.com/blogs/news/why-is-everyone-doing-olive-oil-shots"}
+    ]
+  },
+  {
+    "id": "stance:sun-and-uv",
+    "topic": "Sun Exposure & UV Protection",
+    "category": "skin_and_light",
+    "status": "conditional",
+    "summary": "Avoids direct sun during high-UV hours (10 am - 4 pm / UV index > 3-4) while getting early morning/late afternoon light and supplementing Vitamin D.",
+    "dosage_or_rule": "Sun only when UV index < 3; during high UV use hat, UPF clothing, UV umbrella, UV-tinted windows (99% block), or mineral sunscreen; 2,000 IU/day Vitamin D.",
+    "rationale": "Treats a suntan as visible skin damage rather than health; chronic UV causes 80-90% of visible facial aging and most melanoma risk.",
+    "changed_at": "2026-07-08",
+    "sources": [
+      {"title": "Skin Protocol", "url": "https://protocol.bryanjohnson.com/#skin"},
+      {"title": "Why I Avoid the Sun", "url": "https://blueprint.bryanjohnson.com/blogs/news/why-i-avoid-the-sun"}
+    ]
+  },
+  {
+    "id": "stance:social-media",
+    "topic": "Social Media & Screens",
+    "category": "mental_health_and_sleep",
+    "status": "conditional",
+    "summary": "Treats compulsive social media like 'pollution' and 'intoxication'; restricts screen timing strictly and periodically does 7-day social media fasts.",
+    "dosage_or_rule": "Screens off 60 minutes before bed; no messages or social media before ~10:10 am and after the first hour of focused morning work; periodic 7-day fasts.",
+    "rationale": "Screens before bed elevate stress and heart rate; cutting social media by 50% and running 7-day fasts dramatically improved sleep, mood, anxiety, and clarity.",
+    "changed_at": "2026-10-26",
+    "sources": [
+      {"title": "Bryan Johnson's Social Media Fast", "url": "https://blueprint.bryanjohnson.com/blogs/news/bryan-johnsons-social-media-fast"},
+      {"title": "My daily routine", "url": "https://protocol.bryanjohnson.com/#my-daily-routine"}
+    ]
+  },
+  {
+    "id": "stance:tea-tree-oil-oral",
+    "topic": "Tea Tree Oil Rinse (Oral Care)",
+    "category": "oral_care",
+    "status": "stopped",
+    "summary": "Discontinued tea tree oil oral rinse once his oral health baseline normalized.",
+    "dosage_or_rule": "Stopped (previously used 2-3 drops in 2 oz water). Current oral stack: Waterpik, floss, soft-bristle electric brush, tongue scraper, SomnoDent bruxism guard, biannual dental cleanings.",
+    "rationale": "Used it temporarily to restore baseline gum/oral health and no longer needed it after achieving ideal baseline.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Oral care", "url": "https://protocol.bryanjohnson.com/#oral-care"}
+    ]
+  },
+  {
+    "id": "stance:dry-sauna",
+    "topic": "Dry Sauna (with Groin Ice Pack)",
+    "category": "therapies",
+    "status": "active",
+    "summary": "Daily 20-minute dry Finnish sauna at 175°F with a reusable ice pack on the groin to protect sperm/fertility markers.",
+    "dosage_or_rule": "20 min daily at 175°F (general recommendation 3-5x/week at 175-194°F), ice pack between cotton boxers/shorts, followed by 36 oz mineral-supplemented water.",
+    "rationale": "Measured steep reductions in environmental toxins (phthalates/perchlorate), improved arterial elasticity/blood pressure, and +57% total motile sperm count when icing vs -54% drop without icing.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "My sauna protocol", "url": "https://protocol.bryanjohnson.com/#my-sauna-protocol"}
+    ]
+  },
+  {
+    "id": "stance:hbot",
+    "topic": "Hyperbaric Oxygen Therapy (HBOT)",
+    "category": "therapies",
+    "status": "active",
+    "summary": "Ranks HBOT among his highest-value longevity therapies using a hard-shell chamber at 2.0 ATA with 100% O2 delivered by face mask.",
+    "dosage_or_rule": "2.0 ATA, 90 min (20 min O2 + 5 min air break cycles), 5x/week for 60 sessions. Explicitly warns to avoid chambers filled with 100% ambient oxygen.",
+    "rationale": "Reported undetectable hsCRP, +2.6% telomere length, +250%/290% microbiome SCFAs/butyrate, +300% VEGF, and -28.6% pTAU217 after 60 sessions.",
+    "changed_at": "2025-06-04",
+    "sources": [
+      {"title": "HBOT Protocol", "url": "https://protocol.bryanjohnson.com/#hbot-protocol"},
+      {"title": "Is HBOT Worth the Hype?", "url": "https://blueprint.bryanjohnson.com/blogs/news/i-tried-hbot-here-s-what-it-did-to-my-brain"}
+    ]
+  },
+  {
+    "id": "stance:exercise",
+    "topic": "Daily Exercise & Movement",
+    "category": "exercise",
+    "status": "active",
+    "summary": "60-90 minute daily workout (~6 hours/week) balancing strength, Zone 2 cardio, HIIT, flexibility, and mobility, while aggressively avoiding injury.",
+    "dosage_or_rule": "6 hrs/week: 3 strength sessions, 3 cardio sessions (150 min Zone 2 + 75 min vigorous/HIIT), balance/flexibility, plus 2-3 min movement every 30 min.",
+    "rationale": "Combines cardiovascular and muscular mortality-reduction evidence while avoiding high-injury movements that derail long-term consistency.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Exercise", "url": "https://protocol.bryanjohnson.com/#exercise"},
+      {"title": "My daily routine", "url": "https://protocol.bryanjohnson.com/#my-daily-routine"}
+    ]
+  },
+  {
+    "id": "stance:nutrition-philosophy",
+    "topic": "Nutrition & Diet Tribe Labels",
+    "category": "nutrition",
+    "status": "active",
+    "summary": "Follows evidence and biomarker feedback rather than diet tribe labels (vegan, carnivore, keto, paleo); eats ~2,250 kcal/day ('every calorie must fight for its life').",
+    "dosage_or_rule": "~2,250 kcal (10% CR): ~130 g protein (25%), ~206 g carbs (35%), ~101 g fat (40%). Core meals: Longevity Protein/Nutty Pudding, Super Veggie, Stuffed Sweet Potato, EVOO.",
+    "rationale": "Every food is selected strictly for nutrient density, low glycemic impact, polyphenols, and measurable biomarker outcomes.",
+    "changed_at": "2026-07-23",
+    "sources": [
+      {"title": "Nutrition", "url": "https://protocol.bryanjohnson.com/#nutrition"},
+      {"title": "My daily routine", "url": "https://protocol.bryanjohnson.com/#my-daily-routine"}
+    ]
+  },
+  {
+    "id": "stance:rx-stack",
+    "topic": "Current Prescription (Rx) Stack",
+    "category": "rx_prescriptions",
+    "status": "active",
+    "summary": "Active medical Rx stack targets glucose control, lipids, vascular function, hair, and diagnosed hypothyroidism.",
+    "dosage_or_rule": "Acarbose (200-400 mg), Jardiance 10 mg, Tadalafil 5 mg, Candesartan 8 mg, Repatha 140 mg every 2 weeks, Oral Minoxidil 3.75 mg, Armour Thyroid 60 mg + Levothyroxine 100 mcg, Metformin 500 mg (cycling 6 weeks on/off).",
+    "rationale": "Targets metabolic resilience, endothelial function, LDL/ApoB optimization, thyroid replacement (diagnosed age 21), and hair preservation.",
+    "changed_at": "2026-07-22",
+    "sources": [
+      {"title": "Rx / Prescriptions", "url": "https://protocol.bryanjohnson.com/#rx-prescriptions"},
+      {"title": "My daily routine", "url": "https://protocol.bryanjohnson.com/#my-daily-routine"}
+    ]
+  },
+  {
+    "id": "stance:testosterone-trt",
+    "topic": "Testosterone / TRT & Male Hormones",
+    "category": "hormones",
+    "status": "stopped",
+    "summary": "Previously wore a testosterone patch during 20% caloric restriction (2023), but exogenous testosterone is no longer listed in his 2026 Rx stack; now emphasizes sleep, microplastic reduction, and basics first.",
+    "dosage_or_rule": "Not in 2026 Rx stack. Advises optimizing sleep, exercise, nutrition, and toxin/microplastic avoidance first; cautions against casual enclomiphene/hCG use.",
+    "rationale": "Shifted from 20% to 10% caloric restriction (2,250 kcal) and noted hormone interventions trigger complex LH/FSH feedback loops and mood side effects in some users.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Rx / Prescriptions (2026)", "url": "https://protocol.bryanjohnson.com/#rx-prescriptions"},
+      {"title": "FULL SEND Podcast (86:52)", "url": "https://www.youtube.com/watch?v=X-Sb8Bsi4Ac&t=5212s"},
+      {"title": "2023 Workout Video (5:29)", "url": "https://www.youtube.com/watch?v=sYyVi-H-ozI&t=329s"}
+    ]
+  },
+  {
+    "id": "stance:hgh-thymus",
+    "topic": "Human Growth Hormone (HGH)",
+    "category": "experimental_therapies",
+    "status": "stopped",
+    "summary": "Ran a 100-day HGH trial aimed at thymus regeneration; discontinued due to side effects.",
+    "dosage_or_rule": "Stopped after 100-day trial.",
+    "rationale": "Regenerated thymus tissue but worsened blood lipids and caused intracranial pressure.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "FULL SEND Podcast (37:46)", "url": "https://www.youtube.com/watch?v=X-Sb8Bsi4Ac&t=2266s"}
+    ]
+  },
+  {
+    "id": "stance:plasma-exchange",
+    "topic": "Young Blood Plasma vs Total Plasma Exchange (TPE)",
+    "category": "experimental_therapies",
+    "status": "experimental",
+    "summary": "Discontinued receiving son Talmage's plasma after 6 months (no personal benefit); later tested Total Plasma Exchange (replacing own plasma with albumin) in 2025.",
+    "dosage_or_rule": "Young donor plasma stopped; TPE (albumin replacement) tested experimentally as a toxin/waste-removal V2.",
+    "rationale": "Young plasma helped his 71-year-old father but showed no benefit for Bryan; TPE produced no subjective change for Bryan given his already clean plasma, though biomarkers are tracked.",
+    "changed_at": "2025-02-27",
+    "sources": [
+      {"title": "I Removed This From My Body (TPE)", "url": "https://www.youtube.com/watch?v=JFCzzO90xHI"},
+      {"title": "FULL SEND Podcast (38:01)", "url": "https://www.youtube.com/watch?v=X-Sb8Bsi4Ac&t=2281s"}
+    ]
+  },
+  {
+    "id": "stance:psilocybin",
+    "topic": "Psilocybin (Magic Mushrooms)",
+    "category": "experimental_therapies",
+    "status": "experimental",
+    "summary": "Conducted a 3-dose quantified psilocybin experiment measuring 249 biomarkers (2025-2026); found intriguing glucose and thermal signals needing replication.",
+    "dosage_or_rule": "Experimental 3-dose clinical trial only; not a daily Blueprint staple.",
+    "rationale": "Motivated by in-vitro human cell lifespan research and mental health data; reported post-trip continuous glucose improvement while noting results are early and require replication.",
+    "changed_at": "2026-10-21",
+    "sources": [
+      {"title": "The Longevity Effects Of Psilocybin", "url": "https://www.youtube.com/watch?v=moReU8AQ-EE"}
+    ]
+  },
+  {
+    "id": "stance:cerebrolysin",
+    "topic": "Cerebrolysin Injections",
+    "category": "experimental_therapies",
+    "status": "stopped",
+    "summary": "Trialed daily 5 mL intramuscular Cerebrolysin injections for three months; no measurable cognitive biomarker effect observed.",
+    "dosage_or_rule": "Trial completed (5 mL IM daily for 3 months); not in ongoing daily routine.",
+    "rationale": "Unable to identify a biomarker demonstrating benefit or harm.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Cerebrolysin", "url": "https://protocol.bryanjohnson.com/#cerebrolysin"}
+    ]
+  },
+  {
+    "id": "stance:donor-fat-baby-face",
+    "topic": "Project Baby Face (Donor Fat Facial Injections)",
+    "category": "experimental_therapies",
+    "status": "stopped",
+    "summary": "Tried injecting donor fat-derived extracellular matrix to restore facial volume lost after aggressive 1,950 kcal restriction; suffered a severe allergic reaction.",
+    "dosage_or_rule": "Stopped immediately after severe allergic swelling; subsequently raised calories from 1,950 to ~2,250 kcal.",
+    "rationale": "Severe acute allergic reaction and realization that overly aggressive calorie restriction caused gaunt facial fat loss.",
+    "changed_at": "2024-12-03",
+    "sources": [
+      {"title": "When Blueprint goes wrong", "url": "https://blueprint.bryanjohnson.com/blogs/news/when-blueprint-goes-wrong"}
+    ]
+  },
+  {
+    "id": "stance:follistatin-gene-therapy",
+    "topic": "Follistatin Gene Therapy",
+    "category": "experimental_therapies",
+    "status": "experimental",
+    "summary": "Received Follistatin gene therapy in October 2023 as an experimental longevity intervention.",
+    "dosage_or_rule": "One-time experimental gene therapy procedure (Oct 2023).",
+    "rationale": "Exploratory intervention documented under Other Advanced Therapies.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Gene Therapy", "url": "https://protocol.bryanjohnson.com/#gene-therapy"},
+      {"title": "I edited my DNA on a secret island", "url": "https://blueprint.bryanjohnson.com/blogs/news/i-edited-my-dna-on-a-secret-island"}
+    ]
+  },
+  {
+    "id": "stance:msc-stem-cells",
+    "topic": "Mesenchymal Stem Cells (MSCs)",
+    "category": "experimental_therapies",
+    "status": "experimental",
+    "summary": "Injected 300 million young Swedish bone-marrow-derived MSCs (CellcoLabs) into knees, hips, and shoulders in March 2024.",
+    "dosage_or_rule": "300M MSCs joint injections (March 2024) with 12-month follow-up MRI.",
+    "rationale": "Experimental joint rejuvenation therapy tracked with pre/post MRI imaging.",
+    "changed_at": "2026-01-21",
+    "sources": [
+      {"title": "Mesenchymal Stem Cells (MSCs)", "url": "https://protocol.bryanjohnson.com/#mesenchymal-stem-cells-mscs"},
+      {"title": "I injected my joints with 300 million stem cells", "url": "https://blueprint.bryanjohnson.com/blogs/news/i-injected-my-joints-with-300-million-stem-cells"}
+    ]
+  },
+  {
+    "id": "stance:hair-loss-protocol",
+    "topic": "Hair Preservation & Regrowth",
+    "category": "hair",
+    "status": "active",
+    "summary": "Proactive multi-modal hair protocol that reversed genetic hair loss and reduced graying.",
+    "dosage_or_rule": "Blueprint Peptide Shampoo & Serum (morning & evening), 5% topical minoxidil (1 mL nightly) + silicone scalp massage, 655 nm red light cap (6 min/day), Oral Minoxidil 3.75 mg/day.",
+    "rationale": "Combines vascular stimulation, peptides, photobiomodulation, and nutrition starting before visible thinning accelerates.",
+    "changed_at": "2026-07-22",
+    "sources": [
+      {"title": "Hair Protocol", "url": "https://protocol.bryanjohnson.com/#hair"},
+      {"title": "How I Reversed My Hair Loss", "url": "https://blueprint.bryanjohnson.com/blogs/news/how-i-reversed-my-hair-loss"}
+    ]
+  },
+  {
+    "id": "stance:water-and-air",
+    "topic": "Water Filtration & Air Quality",
+    "category": "environment",
+    "status": "active",
+    "summary": "Uses 5-stage reverse osmosis + deionization + trace-mineral remineralization for drinking water and checks indoor/outdoor air quality daily.",
+    "dosage_or_rule": "Solid carbon block -> Reverse Osmosis -> Mixed-bed deionization -> Coral calcium remineralization -> Coconut carbon; water tested via SimpleLab; IQAir HealthPro Plus purifier.",
+    "rationale": "Eliminates heavy metals, PFAS, pharmaceuticals, and particulates while restoring >70 trace minerals.",
+    "changed_at": "2026-07-23",
+    "sources": [
+      {"title": "Clean water", "url": "https://protocol.bryanjohnson.com/#clean-water"},
+      {"title": "Products I use", "url": "https://protocol.bryanjohnson.com/#products-i-use"}
+    ]
+  }
+]
