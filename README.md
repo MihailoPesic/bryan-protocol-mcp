@@ -2,6 +2,9 @@
 
 A searchable ground-truth database and Model Context Protocol (MCP) server for Bryan Johnson's Blueprint Protocol.
 
+- **Live Web App:** https://bryan-protocol-mcp.netlify.app
+- **Public Streamable HTTP MCP:** `https://bryan-protocol-mcp.netlify.app/mcp`
+
 It indexes his official protocol pages, Blueprint blog posts, YouTube videos/livestreams, and full-length podcast appearances into a local SQLite FTS5 archive, alongside a curated stance matrix tracking what he actively does, what he stopped doing, and what he avoids.
 
 Runs on Python 3.10+ stdlib and SQLite FTS5 with zero external runtime dependencies.
