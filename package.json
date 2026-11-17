@@ -4,12 +4,26 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "python3 scripts/build_web_bundle.py",
+    "dev": "vite",
+    "build:web": "vite build",
+    "build": "python3 scripts/build_web_bundle.py && vite build",
+    "typecheck": "tsc --noEmit",
     "test:node": "node --test tests/node_engine.test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.24.0",
     "@netlify/functions": "^4.0.0",
+    "lucide-react": "^1.74.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
   }
 }

@@ -77,13 +77,13 @@ PYTHONPATH=src python3 -m bryan_protocol_mcp serve --transport http --host 127.0
 
 ## Public Web UI & Hosted Streamable HTTP MCP (Netlify)
 
-In addition to the local Python stdio server, this repo includes a zero-API-key web frontend (`public/`) and serverless Streamable HTTP MCP endpoint (`netlify/functions/mcp.mts`) ready to deploy on Netlify:
+In addition to the local Python stdio server, this repo includes a React + Tailwind CSS frontend (`web/`) and serverless Streamable HTTP MCP endpoint (`netlify/functions/mcp.mts`) ready to deploy on Netlify:
 
-- `GET /`: Interactive "What Would Bryan Do?" search, shareable `?q=...` verdict links, "Stopped & Avoided" matrix, timestamped video/podcast jump links, and one-click quote/receipt copy buttons.
+- `GET /`: Searchable reference index with shareable `?q=...` verdict links, a "Stopped & Avoided" changelog, timestamped video/podcast jump links, and a slide-over source reader.
 - `POST /mcp`: Public Streamable HTTP MCP server built on `@modelcontextprotocol/sdk` (`WebStandardStreamableHTTPServerTransport`), backed by a compressed 2.1 MB archive bundle (`netlify/functions/data/archive.json.gz`).
 - `GET /api/query`, `/api/stances`, `/api/overview`, `/api/document`, `/api/sources`: JSON endpoints powering the web UI.
 
-Deploy straight to Netlify by linking the GitHub repository (build command `python3 scripts/build_web_bundle.py`, publish directory `public`).
+Deploy straight to Netlify by linking the GitHub repository (build command `python3 scripts/build_web_bundle.py && npm run build:web`, publish directory `dist`).
 
 ## Available MCP Tools & Resources
 
